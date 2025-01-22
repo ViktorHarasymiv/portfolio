@@ -1,0 +1,50 @@
+.header__menu-toggle {
+    position: relative;
+
+    right: 28px;
+
+    transition: all 0.3s ease-in-out; 
+}
+
+.header__menu-toggle>span {
+    position: absolute;
+
+
+    width: 28px;
+    height: 1px;
+
+    background-color: var(--color-gray-8);
+}
+
+.header__menu-toggle::after {
+    content: '';
+
+    position: absolute;
+
+    bottom: -10px;
+
+    width: 28px;
+    height: 1px;
+
+    background-color: var(--color-gray-8);
+}
+
+.header__menu-toggle::before {
+    content: '';
+
+    position: absolute;
+
+    top: -10px;
+
+    width: 28px;
+    height: 1px;
+
+    background-color: var(--color-gray-8);
+    transition: all 0.5s;
+}
+
+@media only screen and (min-width: 900.98px) { 
+    .header__menu-toggle {
+        display: none;
+    }
+}

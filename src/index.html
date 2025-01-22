@@ -2,22 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/favico.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+
+    <title>Viktor Harasymiv.</title>
+
+    <!-- Styles link -->
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Script -->
+    <script>
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+    </script>
   </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+  <body id="scroll--to_top">
+    <!-- Preloader -->
+
+    <div id="preloader">
+      <div id="loader" class="dots-fade">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+
+    <load src="./partials/header.html" />
 
     <main>
       <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+
+      <!-- Intro -->
+      <load src="./partials/intro.html" />
+
+      <!--  -->
     </main>
 
     <load src="./partials/footer.html" />
 
     <script type="module" src="./main.js"></script>
+    <script src="./js/preloader.js"></script>
+    <script src="./js/navigation.js"></script>
   </body>
 </html>
