@@ -12,8 +12,10 @@
     html.classList.add('ss-preload');
     
     window.addEventListener('load', function() {
+        setTimeout(function() {
         html.classList.remove('ss-preload');
         html.classList.add('ss-loaded');
+    }, 100); 
         
         preloader.addEventListener('transitionend', function afterTransition(e) {
             if (e.target.matches('#preloader'))  {
