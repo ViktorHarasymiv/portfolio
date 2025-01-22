@@ -1,9 +1,8 @@
-(function(html) {
-
     'use strict';
 
 /* preloader
     * -------------------------------------------------- */
+(function(html) {
    const ssPreloader = function() {
 
     const siteBody = document.querySelector('body');
