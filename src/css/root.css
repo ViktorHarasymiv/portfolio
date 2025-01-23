@@ -9,9 +9,9 @@
     --base-font-weight :  400;
     --base-line-height :  1.5;
 
-    --h1-font-size: clamp(3.5rem, 4.3vw, 5.5rem);
+    --h1-font-size: clamp(3.5rem, 4.6vw, 6.5rem);
     --h1-mobile: clamp(3.3rem, 8.2vw, 8.8rem);
-    --quality-text: clamp(1.5rem, 3vw, 4.3rem);
+    --quality-text: clamp(1.5rem, 3.2vw, 4.3rem);
     --subb-title__text: clamp(0.8rem, 1.2vw, 3rem);
 
     --ico-font-size: 26px;
