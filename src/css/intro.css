@@ -1,19 +1,27 @@
 #intro--section {
     height           : 100vh;
 
-    background-image : url(/img/intro/my-bgOptim.jpg);
+    background-image : url(/img/intro/foto.jpg);
     background-size  : cover;
 }
 
-.intro--wrapper {
-    height     : 100%;
+@media only screen and (min-width: 520.98px) { 
+    #intro--section { 
+        background-image : url(/img/intro/my-bgOptim.jpg);
+        background-repeat: no-repeat;
+    }
+}
 
-    display    : flex;
+.intro--wrapper {
+    height           : 100%;
+
+    display          : flex;
     justify-content  : space-between;
 }
 
 .intro--text_content {
-padding-top     : 100px;
+padding-top     : calc(60px + 1.5vh);
+
 width           : 100vw;
 height          : 100vh;
 
@@ -65,25 +73,18 @@ align-items     : center;
     display      : none;
 }
 
-.intro--button_box {
-    display      : flex;
-    
-    column-gap   : 17px;
-}
-
-
 .intro--foto {
-    width  : 100%;
-    height : 100%;  
+    width: 100%;
+    height: 100%;
 }
 
 .intro--button_box { 
     width: clamp(300px, 100% , 400px);
 
+    display      : flex;
     align-self: center;
     flex-wrap: wrap;
-    row-gap: 20px;
-
+    gap: 20px 17px;
 }
 
 .intro--b-1 {
@@ -152,8 +153,6 @@ align-items     : center;
 
     .intro--background_image {
         display    : block;
-        
-        width      : 46vw;  
 
         z-index    : -1;
     
@@ -191,10 +190,6 @@ align-items     : center;
 }
 
 @media only screen and (min-width: 1280px) {
-
-    .intro--background_image {
-    
-    }
 
     .intro--button_box { 
         width:100%;
