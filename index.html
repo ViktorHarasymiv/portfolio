@@ -9,31 +9,40 @@
 
     <!-- Styles link -->
 
+    <!-- S L I D E R -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Script -->
     <script>
       document.documentElement.classList.remove('no-js');
       document.documentElement.classList.add('js');
     </script>
     <script type="module" crossorigin src="/portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-C6En9iB2.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-BvJBW-16.css">
   </head>
   <body id="scroll--to_top">
     <!-- Preloader -->
 
-    <div id="preloader">
+    <!-- <div id="preloader">
       <div id="loader" class="dots-fade">
         <div></div>
         <div></div>
         <div></div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Header -->
 
     <header class="header">
   <div class="header_wrapper container">
     <a href="#" class="header_ico __ico">Harasymiv.</a>
-    <a class="header__menu-toggle" href="#"><span></span></a>
+    <a onclick="openModal()" class="header__menu-toggle" href="#"
+      ><span></span
+    ></a>
     <nav class="header_navigation">
       <ul class="header_list">
         <li class="header_nav--item">
@@ -53,6 +62,25 @@
   </div>
 </header>
 
+    <div class="header_modal--navigation">
+  <nav class="modal_navigation container">
+    <ul class="modal_list">
+      <li class="header_nav--item">
+        <a href="#" class="modal_nav_link __link __active-section">Intro</a>
+      </li>
+      <li class="header_nav--item">
+        <a href="#" class="modal_nav_link __link">About</a>
+      </li>
+      <li class="header_nav--item">
+        <a href="#" class="modal_nav_link __link">Works</a>
+      </li>
+      <li class="header_nav--item">
+        <a href="#" class="modal_nav_link __link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
 
     <main>
       <!-- Loads the specified .html file -->
@@ -66,9 +94,25 @@
         I'm Viktor Harasymiv<br />
         <span class="intro--text__quality">a Full Stack Developer.</span>
       </h1>
-      <p class="intro--title_label intro--subb--text_title">
-        I can do some great things for you
-      </p>
+      <div class="swiper mySwiper" style="margin: 0">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-swiper-parallax-opacity="0.5">
+            <p class="intro--title_label intro--subb--text_title">
+              I can do some great things for you
+            </p>
+          </div>
+          <div class="swiper-slide" data-swiper-parallax-opacity="0.5">
+            <p class="intro--title_label intro--subb--text_title">
+              I am capable of remarkable achievements for you
+            </p>
+          </div>
+          <div class="swiper-slide" data-swiper-parallax-opacity="0.5">
+            <p class="intro--title_label intro--subb--text_title">
+              I am ready to assist you in incredible endeavors
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="intro--button_box">
         <a href="#about" class="intro--b-1 __button">More about me</a>
         <a href="#footer" class="intro--b-2 __button __button-white"
@@ -101,5 +145,16 @@
 
     <script src="/portfolio/js/preloader.js"></script>
     <script src="/portfolio/js/navigation.js"></script>
+    <script src="/portfolio/js/mobileMenu.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        autoplay: {
+          delay: 4500,
+        },
+      });
+    </script>
   </body>
 </html>
