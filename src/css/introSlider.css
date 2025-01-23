@@ -1,0 +1,11 @@
+.mySwiper {
+    width: clamp(272px, 15rem, 620px);
+    text-align: center;
+}
+
+@media only screen and (min-width: 1200px) { 
+    .mySwiper {
+        width: clamp(375px, 32rem, 620px);
+        text-align: left;
+    }
+}

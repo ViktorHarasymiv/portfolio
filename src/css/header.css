@@ -30,12 +30,15 @@
 
 @media only screen and (min-width: 900.98px) { 
   .header {
+
     height: 72px;
   
     top: 25px;
     right: 50%;
   
     transform: translateX(50%);
+
+    border-bottom: none;
   }
 
   .header_navigation { 

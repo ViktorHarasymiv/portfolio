@@ -1,7 +1,7 @@
 .header__menu-toggle {
     position: relative;
 
-    right: 28px;
+    right: 30px;
 
     transition: all 0.3s ease-in-out; 
 }
@@ -11,7 +11,7 @@
 
 
     width: 28px;
-    height: 1px;
+    height: 1.5px;
 
     background-color: var(--color-gray-8);
 }
@@ -24,9 +24,11 @@
     bottom: -10px;
 
     width: 28px;
-    height: 1px;
+    height: 1.5px;
 
     background-color: var(--color-gray-8);
+
+    transition: 0.5s;
 }
 
 .header__menu-toggle::before {
@@ -37,14 +39,110 @@
     top: -10px;
 
     width: 28px;
-    height: 1px;
+    height: 1.5px;
 
     background-color: var(--color-gray-8);
-    transition: all 0.5s;
+
+    transition: all 0.6s;
+}
+
+.header__menu-toggle.is-open {
+    z-index: 9997;
+}
+
+.header__menu-toggle.is-open>span {
+    background-color: transparent;
+
+    transition: color all 0.5s;
+}
+
+.header__menu-toggle.is-open::before {
+    transform: rotate(315deg);
+
+    top: 0;
+
+    width: 30px;
+    
+    transition:all 0.5s;
+}
+
+.header__menu-toggle.is-open::after {
+    transform: rotate(-315deg);
+
+    top: 0;
+
+    width: 30px;
+
+    transition:all 0.5s;
 }
 
 @media only screen and (min-width: 900.98px) { 
     .header__menu-toggle {
         display: none;
     }
+}
+
+/*  M O B I L E  */ 
+
+.header_modal--navigation {
+    z-index: -1;
+
+    width: 100%;
+
+    position: absolute;
+
+    top: 80px;
+    
+
+    background-color: var(--color-3);
+    border-top   : 1px solid rgba(255, 255, 255, 0.03);
+    color: var(--c-white);
+
+
+    transform: scaleY(0);
+    transform-origin: center top;
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.header_modal--navigation.is-visible {
+    z-index: 9996;
+    transform: scaleY(1);
+}
+
+.modal_navigation {
+
+}
+
+.modal_list {
+    padding: 50px 0px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    width: 90px;
+
+    transform: scaleY(0);
+
+    transform-origin: center top;
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.header_modal--navigation.is-visible .modal_list {
+    transform: scaleY(1);
+
+    transition: linear;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+}
+
+.modal_nav_link {
+    font-family: var(--font-famili__public);
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 900.98px) { 
+    .header_modal--navigation {
+        display: none;
+}
 }

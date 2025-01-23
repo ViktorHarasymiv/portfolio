@@ -10,6 +10,13 @@
     <!-- Styles link -->
     <link rel="stylesheet" href="./css/styles.css" />
 
+    <!-- S L I D E R -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Script -->
     <script>
       document.documentElement.classList.remove('no-js');
@@ -19,17 +26,18 @@
   <body id="scroll--to_top">
     <!-- Preloader -->
 
-    <div id="preloader">
+    <!-- <div id="preloader">
       <div id="loader" class="dots-fade">
         <div></div>
         <div></div>
         <div></div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Header -->
 
     <load src="./partials/header.html" />
+    <load src="./partials/modal.html" />
 
     <main>
       <!-- Loads the specified .html file -->
@@ -45,5 +53,16 @@
     <script type="module" src="./main.js"></script>
     <script src="/js/preloader.js"></script>
     <script src="/js/navigation.js"></script>
+    <script src="/js/mobileMenu.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        autoplay: {
+          delay: 4500,
+        },
+      });
+    </script>
   </body>
 </html>
