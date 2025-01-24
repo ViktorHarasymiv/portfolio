@@ -26,6 +26,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html {
+	scroll-behavior: smooth;
+  }
+
 body {
 	line-height: var(--base-line-height);
 }
@@ -64,4 +69,16 @@ img {
 
 h1 {
 	font-size: var(--h1-font-size);
+}
+
+h2 {
+	margin: 0;
+
+	font-size: var(--h2-font-size);
+	line-height: 1;
+}
+
+button {
+	background-color: transparent;
+	border: none;
 }
