@@ -92,9 +92,11 @@ main {
   background-color: var(--color-3-dark);
   border: 2px solid hsla(96, 10%, 10%, 1);
 
+  font-family: var(--font-famili__public);
   text-transform: uppercase;
   font-size: 14px;
-  letter-spacing: .3em;
+  font-weight: 500;
+  letter-spacing: 0.3em;
   color: var(--c-white);
 
   transition: all 0.3s;
@@ -124,7 +126,7 @@ main {
 /*  S E C T I O N  S T Y L E  */
 
 .section_title {
-  margin-bottom: calc(3.5 * (3.2rem * 1));
+  margin-bottom: calc(3.5 * (2rem * 1));
   color: var(--c-white);
 
 }

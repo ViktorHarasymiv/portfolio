@@ -23,7 +23,7 @@
     position       : fixed;
 
     background     : var(--c-light);
-    z-index        : 500;
+    z-index        : 99999;
     height         : 100vh;
     width          : 100%;
     opacity        : 1;
