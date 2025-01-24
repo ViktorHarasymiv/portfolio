@@ -2,19 +2,29 @@
 
 .container {
   min-width: 320px;
-  width: min(92%, 1248px);
-  
+  width: min(100%, 100vw);
   margin: 0 auto;
-  padding: 0 16px;
+  
 }
 
 @media only screen and (min-width: 499.98px) and (max-width:900px) { 
-  .container {
-    padding: 0 16px;
-  }
+
 } 
 
 /* Styles for Desktop devices */
+
+@media only screen and (min-width: 900px) {
+  .container { 
+    width: min(90%, 1248px);
+    padding: 0 32px;
+  }
+ }
+
+@media only screen and (min-width: 1200px) { 
+
+}
+
+
 @media only screen and (min-width: 1280px) {
   .container {
     width: 90%;
@@ -26,7 +36,5 @@
 
 .section_container {
   width: min(92%, 1248px);
-
   margin: 0 auto;
-  padding: 0 16px;
 }
