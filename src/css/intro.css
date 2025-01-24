@@ -88,8 +88,8 @@ align-items     : center;
 }
 
 .intro--b-1 {
-    border-color: var(--c-white) ;
     background-color: var(--c-white);
+    border-color:var(--c-white) ;
     color: var(--black);
 }
 
@@ -178,16 +178,15 @@ align-items     : center;
     .intro--b-1,
     .intro--b-2 {
         width: 100%;
+        border-color: hsla(96, 10%, 10%, 1);
     }
 
     .intro--b-1 {
         color: var(--c-white);
-
         background-color: var(--color-black);
     }
 
     .intro--b-2 {
-        border-color: inherit;
         color: inherit;
     }
 }
@@ -204,8 +203,6 @@ align-items     : center;
     .intro--b-1,
     .intro--b-2 {
         width: 219px;
-
-        border-color: var(--black);
     }
     
     

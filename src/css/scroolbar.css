@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--c-white); 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-3); 
+    opacity: 0.7;
+  }
+  

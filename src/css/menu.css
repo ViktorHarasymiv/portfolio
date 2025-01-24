@@ -102,6 +102,10 @@
     transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.fix--mobile_nav {
+    position: fixed;
+}
+
 .header_modal--navigation.is-visible {
     z-index: 9996;
     transform: scaleY(1);

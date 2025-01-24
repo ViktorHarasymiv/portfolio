@@ -94,7 +94,7 @@ main {
 
   text-transform: uppercase;
   font-size: 14px;
-  letter-spacing: .15em;
+  letter-spacing: .3em;
   color: var(--c-white);
 
   transition: all 0.3s;
@@ -120,3 +120,11 @@ main {
 }
 
 /* 200/1920*100 ширина з px в rem*/ 
+
+/*  S E C T I O N  S T Y L E  */
+
+.section_title {
+  margin-bottom: calc(3.5 * (3.2rem * 1));
+  color: var(--c-white);
+
+}

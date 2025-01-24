@@ -17,14 +17,21 @@
  @media only screen and (min-width: 900.98px) {
   .container {
     width: 87%;
-    padding: 0 44px;
+    padding: 0 24px;
   }
 } 
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
   .container {
-    width: 90%;
+    width: 89.3%;
 
   }
-} 
+}
+
+.section_container {
+  width: min(92%, 1248px);
+
+  margin: 0 auto;
+  padding: 0 16px;
+}
