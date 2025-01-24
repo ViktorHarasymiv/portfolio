@@ -1,5 +1,5 @@
 #intro--section {
-    height           : calc(100vh - 80px);
+    height           : 100vh;
 
     background-image : url(/img/intro/foto.JPG);
     background-size  : cover;
@@ -79,7 +79,7 @@ align-items     : center;
 }
 
 .intro--button_box { 
-    width: clamp(300px, 100% , 400px);
+    width: clamp(300px, 80% , 400px);
 
     display      : flex;
     align-self: center;
