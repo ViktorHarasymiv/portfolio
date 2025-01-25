@@ -127,6 +127,38 @@ main {
 
 .section_title {
   margin-bottom: calc(3.5 * (2rem * 1));
-  color: var(--c-white);
+  color: inherit;
 
+}
+
+.backdrop-title {
+  position: relative;
+  z-index: 1;
+}
+
+.backdrop-title::after {
+  content: attr(data-num);
+
+  font-family: var(--font-famili__public);
+
+  font-weight: 600;
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  line-height: 1;
+
+  color: var(--color-gray-18);
+
+  position: absolute;
+  top: -0.4em;
+  left: -0.08em;
+  opacity: 0.1;
+}
+
+.footer .section_title {
+  color: var(--c-white);
+}
+
+.footer .backdrop-title::after {
+  font-size: 3.3em;
+  color: var(--color-gray-11);
 }

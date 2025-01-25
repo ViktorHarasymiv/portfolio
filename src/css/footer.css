@@ -1,37 +1,13 @@
 .footer {
   position: relative;
   
-  padding-top: calc(6 * (2.4rem * 1));
+  padding-top: var(--section--padding-top);
   padding-bottom:  calc(2.5 * (2rem * 1));
 
   background-color: var(--color-3);
 }
 
 /* Content */
-
-.backdrop-title {
-  position: relative;
-  z-index: 1;
-}
-
-.backdrop-title::after {
-  content: attr(data-num);
-
-  font-family: var(--font-famili__public);
-
-  font-weight: 600;
-  font-size: 3.3em;
-  letter-spacing: -0.05em;
-  line-height: 1;
-
-  color: var(--color-gray-11);
-
-  position: absolute;
-  top: -0.4em;
-  left: -0.08em;
-  opacity: 0.1;
-}
-
 .footer--content_box {
   margin-bottom: calc(3.5 * (2rem * 1));
 

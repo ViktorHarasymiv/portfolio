@@ -89,6 +89,12 @@ h2 {
 	line-height: 1;
 }
 
+h3,
+h3>span {
+	font-family: inherit;
+	font-size: var(--h3-font-size);
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
