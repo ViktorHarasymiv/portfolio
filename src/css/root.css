@@ -10,10 +10,17 @@
     --base-line-height :  1.5;
 
     --h1-font-size: clamp(3.5rem, 4.6vw, 6.5rem);
-    --h2-font-size: clamp(2.8rem, 3.8vw, 5.8rem);
     --h1-mobile: clamp(3.3rem, 8.2vw, 8.8rem);
+
+    --h2-font-size: clamp(2.8rem, 3.8vw, 5.8rem);
+
+    --h3-font-size: clamp(2.3rem, 3.3vw, 5.3rem);
+
+    --section--padding-top: calc(5 * (2.4rem * 1));
+    
     --quality-text: clamp(1.5rem, 3.2vw, 4.3rem);
     --subb-title__text: clamp(0.8rem, 1.2vw, 3rem);
+    --skills-item-size: clamp(0.6rem, 0,9vw, 1.5rem);
 
     --ico-font-size: 26px;
     --kick-line-height: 1;
@@ -36,6 +43,11 @@
     --border-radius-3: 60px;
     --border-radius-4: 4px;
     --c-dark-for-shadow: #000;
+
+    --box-shadow-inset-2: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .35);
+    --shadowBefore: var(--box-shadow-4), var(--box-shadow-inset-2-transparent);
+    --shadowAfter: var(--box-shadow-4-transparent), var(--box-shadow-inset-2);
+
     --box-shadow: -12px -12px 12px hsla(0, 0%, 100%, .32), 12px 12px 12px rgba(0, 0, 0, .32);
     --box-shadow-2: -4px -4px 12px hsla(0, 0%, 100%, .8), 4px 4px 12px var(--c-dark-for-shadow);
     --box-shadow-3: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px var(--c-dark-for-shadow);

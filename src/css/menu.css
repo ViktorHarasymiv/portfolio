@@ -98,25 +98,34 @@
 
 
     transform: scaleY(0);
-    transform-origin: center top;
-    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-
 .fix--mobile_nav {
     position: fixed;
 }
 
+@keyframes scaleEfect {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+  }
+
 .header_modal--navigation.is-visible {
     z-index: 9996;
+    
     transform: scaleY(1);
+    transform-origin: center top;
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.modal_navigation {
-
+.header_modal--navigation.is-visible .fix--mobile_nav {
+    animation-name: scaleEfect;
 }
 
 .modal_list {
-    padding: 50px 0px;
+    padding: 50px 32px;
 
     display: flex;
     flex-direction: column;

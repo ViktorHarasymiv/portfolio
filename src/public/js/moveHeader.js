@@ -22,28 +22,35 @@
 
         if (loc > triggerHeight) {
             hdr.classList.add('sticky');
-            mobileNav.classList.add('fix--mobile_nav');
         } else {
             hdr.classList.remove('sticky');
-            mobileNav.classList.remove('fix--mobile_nav');
         }
 
         if (loc > triggerHeight + 20) {
             hdr.classList.add('offset');
+            mobileNav.classList.add('fix--mobile_nav');
         } else {
             hdr.classList.remove('offset');
         }
 
         if (loc > triggerHeight + 150) {
             hdr.classList.add('scrolling');
+            mobileNav.classList.add('fix--mobile_nav');
         } else {
             hdr.classList.remove('scrolling');
+            mobileNav.classList.remove('fix--mobile_nav');
         }
 
     });
 
 }; // end ssMoveHeader
 
+function openSubNav() {
+    const subList = document.querySelector('.works--sub_nav');
+
+    subList.classList.toggle('is-visibile');
+    
+}
 
    /* Initialize
     * ------------------------------------------------------ */

@@ -5,13 +5,6 @@
     background-size  : cover;
 }
 
-@media only screen and (min-width: 520.98px) { 
-    #intro--section { 
-        background-image : url(/img/intro/my-bgOptim.jpg);
-        background-repeat: no-repeat;
-    }
-}
-
 .intro--wrapper {
     height           : 100%;
 
@@ -33,7 +26,7 @@ align-items     : center;
 }
 
 .intro--title_label {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 
     font-family: var(--font-famili__public);
@@ -46,6 +39,7 @@ align-items     : center;
 }
 
 .intro--title {
+    padding: 0 16px;
     margin-bottom: 10px;
 
     font-size: var(--h1-mobile);
@@ -79,7 +73,7 @@ align-items     : center;
 }
 
 .intro--button_box { 
-    width: clamp(300px, 80% , 400px);
+    width: clamp(300px, 85% , 400px);
 
     display      : flex;
     align-self: center;
@@ -111,6 +105,13 @@ align-items     : center;
     height: 52px;
 }
 
+@media only screen and (min-width: 520.98px) { 
+    #intro--section { 
+        background-image : url(/img/intro/my-bgOptim.jpg);
+        background-repeat: no-repeat;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
 
     #intro--section {
@@ -138,6 +139,7 @@ align-items     : center;
     }
 
     .intro--title { 
+        padding:  0;
         font-size: var(--h1-font-size);
         color: inherit;
         text-align: left;
