@@ -9,6 +9,8 @@
 
     <!-- Styles link -->
 
+    <link rel="stylesheet" href="dist/basicLightbox.min.css" />
+
     <!-- S L I D E R -->
 
     <link
@@ -22,7 +24,7 @@
       document.documentElement.classList.add('js');
     </script>
     <script type="module" crossorigin src="/portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DhGZAqlA.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-D-m4CZvA.css">
   </head>
   <body id="scroll--to_top">
     <!-- Preloader -->
@@ -41,9 +43,23 @@
   <div class="header_wrapper container">
     <div class="header_content">
       <a href="#" class="header_ico __ico">Harasymiv.</a>
-      <button onclick="openModal()" class="header__menu-toggle">
-        <span></span>
-      </button>
+      <svg
+        onclick="openModal()"
+        class="ham hamRotate ham4"
+        viewBox="0 0 100 100"
+        width="44px"
+        heigth="44px"
+      >
+        <path
+          class="line top"
+          d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+        />
+        <path class="line middle" d="m 70,50 h -40" />
+        <path
+          class="line bottom"
+          d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+        />
+      </svg>
       <nav class="header_navigation">
         <ul class="header_list">
           <li class="header_nav--item">
@@ -61,10 +77,10 @@
             <div class="works--sub_nav">
               <ul class="works--sub_list">
                 <li class="works--sub_item">
-                  <a href="#">My Portfolio</a>
+                  <a href="#portfolio--section">My Portfolio</a>
                 </li>
                 <li class="works--sub_item">
-                  <a href="#">Work Experience</a>
+                  <a href="#experience--section">Work Experience</a>
                 </li>
                 <li class="works--sub_item">
                   <a href="#skills--section">Skills</a>
@@ -173,17 +189,54 @@
   </div>
 </section>
 
-      <section id="skills--section">
+      <section id="about--section" class="section">
+  <div class="about--section_wrapper section_container">
+    <h2 data-num="01" class="section_title backdrop-title">About.</h2>
+  </div>
+</section>
+
+      <section id="skills--section" class="section">
   <div class="skills--section_wrapper section_container">
-    <h2 data-num="01" class="section_title backdrop-title">Skills.</h2>
+    <h2 data-num="02" class="section_title backdrop-title">Skills.</h2>
     <div class="skills--section_box">
       <ul class="skill--section_list">
-        <h3 class="skill--list_title"><span>Hard</span> skills.</h3>
+        <h3 class="skill--list_title">
+          <span class="section_custom_text">Hard</span> skills.
+        </h3>
       </ul>
       <ul class="skill--section_list">
-        <h3 class="skill--list_title"><span>Soft</span> skills.</h3>
+        <h3 class="skill--list_title">
+          <span class="section_custom_text">Soft</span> skills.
+        </h3>
       </ul>
     </div>
+  </div>
+</section>
+
+      <section id="experience--section" class="section">
+  <div class="experience--section_wrapper section_container">
+    <h2 data-num="03" class="section_title backdrop-title">
+      Work <span class="section_custom_text">Experience.</span>
+    </h2>
+  </div>
+</section>
+
+      <section id="portfolio--section" class="section">
+  <div class="portfolio--section_wrapper section_container">
+    <h2 data-num="04" class="section_title backdrop-title">
+      My <span class="section_custom_text">Portfolio.</span>
+    </h2>
+    <div class="portfolio--box">
+      <ul class="portfolio--list"></ul>
+    </div>
+  </div>
+</section>
+
+      <section id="contact--section" class="section">
+  <div class="contact--section_wrapper section_container">
+    <h2 data-num="05" class="section_title backdrop-title">
+      Get <span class="section_custom_text">Contact.</span>
+    </h2>
   </div>
 </section>
 
@@ -361,8 +414,10 @@
     <script src="/portfolio/js/navigation.js"></script>
     <script src="/portfolio/js/mobileMenu.js"></script>
     <script src="/portfolio/js/skills.js"></script>
+    <script src="/portfolio/js/portfolio.js"></script>
 
     <!-- Initialize Swiper -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper('.mySwiper', {
