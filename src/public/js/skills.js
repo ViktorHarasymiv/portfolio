@@ -40,12 +40,9 @@ let addHardSkill = hardSkills.map((hard) =>
     `<li class="skill--item">${hard}</li>`)
     .join("");
 
-let addSofrSkill = softSkills.map((soft) => 
+let addSoftSkill = softSkills.map((soft) => 
     `<li class="skill--item">${soft}</li>`)
     .join("");
 
 skillList[0].insertAdjacentHTML("beforeend", addHardSkill);
-skillList[1].insertAdjacentHTML("beforeend", addSofrSkill);
-
-
-
+skillList[1].insertAdjacentHTML("beforeend", addSoftSkill);

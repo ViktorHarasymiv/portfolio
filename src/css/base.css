@@ -125,10 +125,19 @@ main {
 
 /*  S E C T I O N  S T Y L E  */
 
+.section {
+  padding-top: var(--section--padding-top);
+}
+
 .section_title {
   margin-bottom: calc(3.5 * (2rem * 1));
   color: inherit;
 
+}
+
+.section_custom_text{
+  font-size: 64px;
+  color: var(--color-1);
 }
 
 .backdrop-title {

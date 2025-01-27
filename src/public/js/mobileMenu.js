@@ -3,10 +3,10 @@
 
 function openModal() {
 
-    const menuButton = document.querySelector('.header__menu-toggle');
+    const menuButton = document.querySelector('.ham4 ');
     const activePanel = document.querySelector('.header_modal--navigation');
     
-    menuButton.classList.toggle('is-open');
+    menuButton.classList.toggle('active');
     activePanel.classList.toggle('is-visible');
     
   }
