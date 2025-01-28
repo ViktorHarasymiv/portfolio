@@ -5,11 +5,11 @@ const addChildetoPortfolio = document.querySelector('.portfolio--list');
 
 /*  Skills array  */
 const skills = {
-    HTML : "img/icons/html.svg",
+    HTML : "/public/html.svg",
     CSS : "https://img.icons8.com/?size=100&id=10236&format=png&color=000000",
     JS : "img/icons/node-js.svg",
     React :"https://img.icons8.com/?size=100&id=58811&format=png&color=000000",
-    Redux: "img/icons/redux.svg",
+    Redux: "/public/redux.svg",
 }
 
 const skillsValue = Object.values(skills);
@@ -20,7 +20,7 @@ const portfolioItems = [
 
     [{
         id: 1,
-        previewScreen: "img/portfolio/createx.jpg",
+        previewScreen: "createx.jpg",
         data: "December 2024",
         title: "Createx",
         about: "Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.",
@@ -29,7 +29,7 @@ const portfolioItems = [
     }],
     [{
         id: 2,
-        previewScreen: "img/portfolio/interno.jpg",
+        previewScreen: "interno.jpg",
         data: "September 2024",
         title: "Interno",
         about: "(REST API YandexMap) with ATMs and office points.",
@@ -43,7 +43,7 @@ function addItems(id) {
     let addPortfolioItem = portfolioItems[id].map(elem =>
         `<li class="portfolio--item">
               <a onclick="showFullScreenImg(event, ${id})" href="" class="portfolio--item_previewScreen">
-                 <img src="${elem.previewScreen}" data-id="${id}" />
+                 <img src="/public/${elem.previewScreen}" data-id="${id}" />
               </a>
               <div class="portfolio--item_content">
                  <span class="portfolio--item_data">${elem.data}</span>
@@ -81,7 +81,7 @@ function showFullScreenImg(event, id) {
             <div class="portfolio--modal">
               <button onClick="closeModal()" class="close_modal">X</button>
                 <div class="portfolio--overlay">
-                  <img onClick="closeModal()" src="${previewScreenItem.src}" />        
+                  <img onClick="closeModal()" src="/public/${previewScreenItem.src}" />        
                 </div> `
 
     
