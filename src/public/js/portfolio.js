@@ -5,11 +5,11 @@ const addChildetoPortfolio = document.querySelector('.portfolio--list');
 
 /*  Skills array  */
 const skills = {
-    HTML : "/img/icons/html.svg",
+    HTML : "img/icons/html.svg",
     CSS : "https://img.icons8.com/?size=100&id=10236&format=png&color=000000",
-    JS : "/img/icons/node-js.svg",
+    JS : "img/icons/node-js.svg",
     React :"https://img.icons8.com/?size=100&id=58811&format=png&color=000000",
-    Redux: "/img/icons/redux.svg",
+    Redux: "img/icons/redux.svg",
 }
 
 const skillsValue = Object.values(skills);
@@ -20,7 +20,7 @@ const portfolioItems = [
 
     [{
         id: 1,
-        previewScreen: "/img/portfolio/createx.jpg",
+        previewScreen: "img/portfolio/createx.jpg",
         data: "December 2024",
         title: "Createx",
         about: "Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.",
@@ -29,7 +29,7 @@ const portfolioItems = [
     }],
     [{
         id: 2,
-        previewScreen: "/img/portfolio/interno.jpg",
+        previewScreen: "img/portfolio/interno.jpg",
         data: "September 2024",
         title: "Interno",
         about: "(REST API YandexMap) with ATMs and office points.",
