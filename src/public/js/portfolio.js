@@ -5,11 +5,11 @@ const addChildetoPortfolio = document.querySelector('.portfolio--list');
 
 /*  Skills array  */
 const skills = {
-    HTML : "/html.svg",
+    HTML : "html.svg",
     CSS : "https://img.icons8.com/?size=100&id=10236&format=png&color=000000",
-    JS : "/node-js.svg",
+    JS : "node-js.svg",
     React :"https://img.icons8.com/?size=100&id=58811&format=png&color=000000",
-    Redux: "/img/icons/redux.svg",
+    Redux: "redux.svg",
 }
 
 const skillsValue = Object.values(skills);
@@ -61,7 +61,7 @@ function addItems(id) {
                  <ul class="portfolio--item_icons_list">
                    ${elem.skills
                     .map(skill =>
-                   `<li class="portfolio--item_link"><img src="${skill}" width="22px" height="22px" class="portfolio--item_skill" /></li>`)
+                   `<li class="portfolio--item_link"><img src="/img/icons/${skill}" width="22px" height="22px" class="portfolio--item_skill" /></li>`)
                     .join('')}
                  </ul>
               </div>
