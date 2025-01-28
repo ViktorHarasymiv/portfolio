@@ -1,0 +1,49 @@
+.about--paragraph {
+    position: relative;
+
+    font-size: var(--paragraph);
+
+    letter-spacing: .02em;
+    line-height: 2.5;
+}
+
+.p-1 {
+    margin-left: 58px;
+}
+
+.letter-J {
+    display: inline-block;
+
+    position: absolute;
+
+    top: -13px;
+    left: 4px;
+
+    background-image: url(./../img/letter-j.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width:75px;
+    height: 75px;
+}
+
+.about--paragraph::before {
+    position: absolute;
+
+    content: "";
+
+    width: 20px;
+    height: 20px;
+
+    top: 2px;
+
+    background-image: url(./../img/paragraph.svg);
+
+    background-size: contain;
+}
+
+.paragraph_selected-text {
+    font-size: var(--paragraph_selected);
+    letter-spacing: .08em;
+    color: var(--color-1);
+}

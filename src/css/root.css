@@ -23,6 +23,9 @@
     --subb-title__text: clamp(0.8rem, 1.2vw, 3rem);
     --skills-item-size: clamp(0.6rem, 0,9vw, 1.5rem);
 
+    --paragraph: clamp(1rem, 1.6vw, 2rem);
+    --paragraph_selected: clamp(1.4rem, 2vw, 2.4rem);
+
     --ico-font-size: 26px;
     --kick-line-height: 1;
 
@@ -60,6 +63,7 @@
     --box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, .015), inset 8px 4px 20px 12px rgba(0, 0, 0, .8);
     --box-shadow-inset-transparent: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0), inset 8px 4px 20px 12px transparent;
     --box-shadow-inset-2: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
+    --box-shadow-inset-2-hover: inset 2px 2px 4px hsla(0, 0%, 100%, .1), inset -2px -2px 4px rgba(0, 0, 0, .5);
     --box-shadow-inset-2-transparent: inset -2px -2px 4px hsla(0, 0%, 100%, 0), inset 2px 2px 4px transparent;
     --fancybox-opacity: 1;
     --fancybox-ts: 0.2s ease;
