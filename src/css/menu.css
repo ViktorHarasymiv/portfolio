@@ -80,6 +80,8 @@
 .ham {
     cursor: pointer;
 
+    width: 80px;
+
     -webkit-tap-highlight-color: transparent;
     transition: transform 400ms;
     -moz-user-select: none;
@@ -102,7 +104,6 @@
     stroke: var(--color-white);
     stroke-width:3;
     stroke-linecap:round;
-
   }
 
   .ham4 .top {

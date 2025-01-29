@@ -18,6 +18,7 @@
     --h4-font-size: clamp(1.5rem, 2vw, 4rem);
 
     --section--padding-top: calc(5 * (2.4rem * 1));
+    --m-section--padding-top: calc(4 * (2.4rem * 1));
     
     --quality-text: clamp(1.5rem, 3.2vw, 4.3rem);
     --subb-title__text: clamp(0.8rem, 1.2vw, 3rem);
