@@ -132,11 +132,12 @@ main {
 .section_title {
   margin-bottom: calc(3.5 * (2rem * 1));
   color: inherit;
-
+  line-height: 1;
 }
 
 .section_custom_text{
-  font-size: 64px;
+  font-size: inherit;
+  line-height: 1;
   color: var(--color-1);
 }
 
@@ -170,4 +171,11 @@ main {
 .footer .backdrop-title::after {
   font-size: 3.3em;
   color: var(--color-gray-11);
+}
+
+
+@media screen and (max-width:899.98px) { 
+  .section {
+    padding-top: var(--m-section--padding-top);
+  }
 }

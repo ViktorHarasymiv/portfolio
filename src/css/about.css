@@ -5,10 +5,12 @@
 
     letter-spacing: .02em;
     line-height: 2.5;
+
+    word-wrap: break-all;
 }
 
 .p-1 {
-    margin-left: 58px;
+    margin-left: 34px;
 }
 
 .letter-J {
@@ -17,7 +19,7 @@
     position: absolute;
 
     top: -13px;
-    left: 4px;
+    left: -15px;
 
     background-image: url(./../img/letter-j.svg);
     background-repeat: no-repeat;
@@ -35,7 +37,8 @@
     width: 20px;
     height: 20px;
 
-    top: 2px;
+    top: -5px;
+    left: -15px ;
 
     background-image: url(./../img/paragraph.svg);
 
@@ -46,4 +49,37 @@
     font-size: var(--paragraph_selected);
     letter-spacing: .08em;
     color: var(--color-1);
+}
+
+@media screen and (max-width:899.98px) {
+    .about--paragraph {
+        padding: 0px 25px;
+    }
+    .about--paragraph,
+    .paragraph_selected-text
+     { 
+        letter-spacing: .02em;
+    }
+
+    .p-1 { 
+        margin-left: 12px;
+    }
+
+    .letter-J { 
+        top: -30px;
+    }
+    .about--paragraph::before {
+        top: -20px;
+        left: -15px;
+    }
+}
+
+@media screen and (min-width:900.98px) and (max-width: 1499.98px) {
+    .letter-J { 
+        top: -30px
+    }
+
+    .about--paragraph::before {
+        top: -20px;
+    }
 }

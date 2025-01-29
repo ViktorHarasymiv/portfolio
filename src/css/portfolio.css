@@ -34,9 +34,6 @@
 
 .portfolio--item_previewScreen img {
     max-width: 500px;
-    height: 100%;
-
-   object-fit: cover;
     
 }
 
@@ -165,7 +162,7 @@
     justify-content: center;
 
     width: 100vw;
-    height: 100vh;
+    height: 110%;
 
 }
 
@@ -258,7 +255,7 @@
 
     .portfolio--item_previewScreen img {
         max-width: 100%;
-    max-height: 100%;
+        height: auto;
     }
 
     .close_modal {
@@ -274,7 +271,7 @@
 
 @media screen and (max-width:599.98px) { 
     .portfolio--overlay {
-        width: 80%;
+        width: 75%;
 
         margin: 0 auto;
     }
