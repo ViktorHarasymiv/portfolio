@@ -70,7 +70,7 @@ function addItems(id) {
                  <ul class="portfolio--item_icons_list">
                    ${elem.skills
                     .map(skill =>
-                   `<li class="portfolio--item_link"><img src="/icons/${skill}" width="22px" height="22px" class="portfolio--item_skill" /></li>`)
+                   `<li class="portfolio--item_link"><img src="icons/${skill}" width="22px" height="22px" class="portfolio--item_skill" /></li>`)
                     .join('')}
                  </ul>
               </div>
