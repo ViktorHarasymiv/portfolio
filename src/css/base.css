@@ -25,6 +25,10 @@ main {
   flex-grow: 1;
 }
 
+.lock-scroll {
+  overflow: hidden;
+}
+
 /* Link */
 
 .__ico {
