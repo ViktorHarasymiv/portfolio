@@ -141,6 +141,10 @@
     transition: all .4s ease-in;
 }
 
+.portfolio--item_skill {
+    min-height: auto;
+}
+
 .portfolio--modal {
     display: block;
 
@@ -157,39 +161,33 @@
 }
 
 .portfolio--overlay {
+    height: 100vh;
+    
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    width: 100vw;
-    height: 110%;
-
+    align-items: center;
+    
+    margin-top: 30px;
 }
 
 .image_scroll_box {
-    position: relative;
-    width: 550px;
-    height: 75vh;
-
     overflow-y: scroll;
-
-}
-
-
-.image_scroll_box::-webkit-scrollbar {
-    width: 0;
+    
+    height: 75vh;
 }
 
 .portfolio--overlay_image {
-    position: absolute;
-
-    width: 100%;
+    width: 530px;
     object-fit: cover;
 
     animation: animImage .3s linear;
 
     transform-origin: center top;
     transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.image_scroll_box::-webkit-scrollbar {
+    width: 0;
 }
 
 @keyframes animImage {
@@ -206,10 +204,11 @@
 
 .close_modal {
     z-index: 99998;
-    position: absolute;
 
-    top: 85px;
-    right: 100px;
+    position: fixed;
+
+    top: 90px;
+    right: 200px;
 
     width: 34px;
     height: 34px;
@@ -260,8 +259,8 @@
 
     .close_modal {
    
-        top: 100px;
-        right: 35px;
+        top: 88px;
+        right: 34px;
     
         width: 24px;
         height: 24px;
@@ -270,10 +269,10 @@
  }
 
 @media screen and (max-width:599.98px) { 
-    .portfolio--overlay {
-        width: 75%;
 
-        margin: 0 auto;
+    .image_scroll_box {
+        width: 80vw;
+        height: 58vh;
     }
 
     .portfolio--item_content {
@@ -296,7 +295,8 @@
     }
  
     .close_modal { 
-        top: 30px;
+        right: 20px;
+        top: 130px;
     }
 
 }

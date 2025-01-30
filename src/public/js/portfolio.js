@@ -17,7 +17,6 @@ const skills = {
     MoongoDB :"mongoDB.png"
 
 }
-
 const skillsValue = Object.values(skills);
 
 /* Portfolio array */
@@ -30,11 +29,13 @@ const portfolioItems = [
         data: "December 2024",
         title: "Createx",
         url : "https://viktorharasymiv.github.io/createX/",
+        alt : "https://viktorharasymiv.github.io/createX/",
         fullImage : "image.jpg",
         about: "Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.",
         skills: [skillsValue[0] , skillsValue[1] , skillsValue[2] , skillsValue[3], skillsValue[4] , skillsValue[6] , skillsValue[7] ]
-
+    
     }],
+
     [{
         id: 2,
         previewScreen: "interno.jpg",
@@ -44,6 +45,7 @@ const portfolioItems = [
         about: "Minimalistic,based on SPA with integration of several technologies: Vite, TypeScript, React, React Router, Redux, Redux Toolkit, Redux Persist, Formik, Yup, classNames, PostCSS, Vite SVG icon, Vitest etc.",
         skills: [skillsValue[0] , skillsValue[1] , skillsValue[3] , skillsValue[6] , skillsValue[7] ] ,
     }],
+
     [{
         id: 3,
         previewScreen: "shop.jpg",
@@ -56,6 +58,7 @@ const portfolioItems = [
 ]
 
 /* Function for mark up list item to portfolio */
+
 
 function addItems(id) {
     let addPortfolioItem = portfolioItems[id].map(elem =>
@@ -84,16 +87,19 @@ function addItems(id) {
 
 function showFullScreenImg(event) {
 
-    event.preventDefault()
+    event.preventDefault();
 
     const previewScreenItem = event.target;
-
+    
     const imageData =  event.target.dataset;
 
-    console.log(imageData);
+    const existingModal = document.querySelector(".portfolio--modal");
     
 
     if (previewScreenItem.nodeName !== 'IMG') { return; }
+
+    
+  document.body.classList.add('lock-scroll');
 
             const markUpScreen = `
             <div class="portfolio--modal">
@@ -102,27 +108,26 @@ function showFullScreenImg(event) {
             
             <div class="portfolio--overlay">
             <div class="image_scroll_box">
-              <img onClick="closeModal()" src="${imageData.id}" class="portfolio--overlay_image" /> 
-            </div>      
+              <img onClick="closeModal()" src="${imageData.id}" class="portfolio--overlay_image" />
+              </div>      
             </div>
                                  `
 
-    const existingModal = document.querySelector(".portfolio--modal");
+                                
 
     if (existingModal) {
-
         existingModal.remove();
-
     }
     
     galleryBox.insertAdjacentHTML("beforeend", markUpScreen);
 
-};
+}
 
 function closeModal() {
     const modal = document.querySelector(".portfolio--modal");
     
     if (modal) {
+        document.body.classList.remove('lock-scroll');
         modal.remove(); 
     }
 }

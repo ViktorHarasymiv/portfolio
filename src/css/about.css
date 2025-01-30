@@ -6,27 +6,7 @@
     letter-spacing: .02em;
     line-height: 2.5;
 
-    word-wrap: break-all;
-}
-
-.p-1 {
-    margin-left: 34px;
-}
-
-.letter-J {
-    display: inline-block;
-
-    position: absolute;
-
-    top: -13px;
-    left: -15px;
-
-    background-image: url(./../img/letter-j.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    width:75px;
-    height: 75px;
+    word-break: break-all;
 }
 
 .about--paragraph::before {
@@ -34,14 +14,15 @@
 
     content: "";
 
-    width: 20px;
-    height: 20px;
+    width:27px;
+    height: 40px;
 
-    top: -5px;
-    left: -15px ;
+    top: 2px;
+    left: 9px;
 
-    background-image: url(./../img/paragraph.svg);
+    background-image: url(./../img/letter-j.svg);
 
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
@@ -51,10 +32,12 @@
     color: var(--color-1);
 }
 
+.p-1 {
+    margin-left: 35px;
+}
+
 @media screen and (max-width:899.98px) {
-    .about--paragraph {
-        padding: 0px 25px;
-    }
+
     .about--paragraph,
     .paragraph_selected-text
      { 
@@ -62,24 +45,19 @@
     }
 
     .p-1 { 
-        margin-left: 12px;
+        margin-left: 30px;
     }
 
-    .letter-J { 
-        top: -30px;
-    }
     .about--paragraph::before {
-        top: -20px;
-        left: -15px;
+        top: -12.5px;
+        left: 4px;
     }
 }
 
 @media screen and (min-width:900.98px) and (max-width: 1499.98px) {
-    .letter-J { 
-        top: -30px
-    }
 
     .about--paragraph::before {
-        top: -20px;
+        top: -10px;
+        left: 9px;
     }
 }
