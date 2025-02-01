@@ -1,0 +1,8 @@
+// import './js/preloader.js'
+// import './js/animText.js'
+// import './js/moveHeader.js'
+// import './js/navigation.js'
+// import './js/mobileMenu.js'
+// import './js/skills.js'
+// import './js/portfolio.js'
+// import './js/experience.js'

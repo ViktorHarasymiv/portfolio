@@ -24,7 +24,7 @@
     --subb-title__text: clamp(0.8rem, 1.2vw, 3rem);
     --skills-item-size: clamp(0.6rem, 0,9vw, 1.5rem);
 
-    --paragraph: clamp(1rem, 1.6vw, 2rem);
+    --paragraph: clamp(.8rem, 1.4vw, 1.8rem);
     --paragraph_selected: clamp(1.4rem, 2vw, 2.4rem);
 
     --ico-font-size: 26px;

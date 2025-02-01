@@ -1,0 +1,99 @@
+#experience--section {
+}
+
+.experience--box {
+    font-family: var(--font-famili__public);
+}
+
+.experience--list {
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 40px;
+
+
+    padding-left: 50px;
+}
+
+.experience--list::before {
+    position: absolute;
+
+    top: 140px;
+    left: 0;
+
+    content: '';
+
+    width: 1px;
+    height: 70%;
+
+    background-color: var(--color-gray-17);
+}
+
+.experience--item {
+    position: relative;
+
+    padding: 30px 60px;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    
+    background-color: var(--color-gray-7);
+    box-shadow: var(--shadowBefore);
+}
+
+.experience--item::before {
+    position: absolute;
+    content: '';
+
+    top: 50%;
+    transform: translateY(-50%);
+    left: -68px;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: var(--color-1-light);
+
+    border: 15px solid var(--color-gray-9);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow-4);
+}
+
+
+/* In box */
+
+.experience--period {
+    margin-bottom: 8px;
+    font-family: var(--font-famili__public);
+    font-size: var(--base-font-size-nav);
+    font-weight: 600;
+    color: var(--color-1);
+}
+
+.experience--institution {
+    margin-bottom: 12px;
+    font-size: var(--h4-font-size);
+}
+
+
+.experience--technical {
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+
+.experience--paragraph {
+    margin-bottom: 20px;
+    max-width: 95%;
+    font-size: var(--subb-title__text);
+}
+
+.experience--skills_list {
+    display: flex;
+    gap: 15px;
+}

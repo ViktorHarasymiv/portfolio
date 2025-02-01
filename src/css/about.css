@@ -5,11 +5,14 @@
 
     letter-spacing: .02em;
     line-height: 2.5;
-
     word-break: break-all;
 }
 
-.about--paragraph::before {
+.letter-j {
+    position: relative;
+}
+
+.letter-j::before {
     position: absolute;
 
     content: "";
@@ -17,8 +20,8 @@
     width:27px;
     height: 40px;
 
-    top: 2px;
-    left: 9px;
+    top: -12px;
+    left: -26px;
 
     background-image: url(./../img/letter-j.svg);
 
