@@ -1,5 +1,3 @@
-'use strict';
-
 const galleryBox = document.querySelector('#portfolio--section');
 const addChildetoPortfolio = document.querySelector('.portfolio--list');
 
@@ -15,13 +13,25 @@ const skills = {
     TypeScript : "typescript.svg",
     Figma : "figma.svg",
     MoongoDB :"mongoDB.png"
-
 }
+
 const skillsValue = Object.values(skills);
 
 /* Portfolio array */
 
 const portfolioItems = [
+    [{
+        id: 0,
+        previewScreen: "futureTech.jpg",
+        data: "December 2024",
+        title: "FutureTech Features",
+        url : "https://viktorharasymiv.github.io/createX/",
+        alt : "https://viktorharasymiv.github.io/createX/",
+        fullImage : "futureTech.jpg",
+        about: "Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.",
+        skills: [skillsValue[0] , skillsValue[1] , skillsValue[2] , skillsValue[3], skillsValue[4] , skillsValue[6] , skillsValue[7] ]
+    
+    }],
 
     [{
         id: 1,
@@ -42,6 +52,8 @@ const portfolioItems = [
         data: "September 2024",
         title: "Interno",
         url : "https://viktorharasymiv.github.io/createX/",
+        alt : "https://viktorharasymiv.github.io/createX/",
+        fullImage : "interno.jpg",
         about: "Minimalistic,based on SPA with integration of several technologies: Vite, TypeScript, React, React Router, Redux, Redux Toolkit, Redux Persist, Formik, Yup, classNames, PostCSS, Vite SVG icon, Vitest etc.",
         skills: [skillsValue[0] , skillsValue[1] , skillsValue[3] , skillsValue[6] , skillsValue[7] ] ,
     }],
@@ -52,6 +64,8 @@ const portfolioItems = [
         data: "January 2025",
         title: "Сlothing store",
         url : "https://viktorharasymiv.github.io/createX/",
+        alt : "https://viktorharasymiv.github.io/createX/",
+        fullImage : "shop.jpg",
         about: "Multi-page online store.",
         skills: [skillsValue[0] , skillsValue[1] , skillsValue[2] , skillsValue[3] , skillsValue[4] , skillsValue[6] , skillsValue[7] ]  ,
     }]
