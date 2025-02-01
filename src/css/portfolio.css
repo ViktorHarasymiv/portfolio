@@ -1,5 +1,8 @@
 #portfolio--section {
+}
 
+.portfolio--box {
+    font-family: var(--font-famili__public);
 }
 
 .portfolio--list {
@@ -33,14 +36,12 @@
 }
 
 .portfolio--item_previewScreen img {
-    max-width: 500px;
-    
+    max-width: 500px;   
 }
 
 .portfolio--item_data {
     margin-bottom: 8px;
 
-    font-family: var(--font-famili__public);
     font-size: var(--base-font-size-nav);
     font-weight: 600;
     color: var(--color-1);
@@ -52,7 +53,6 @@
 
     margin-bottom: 18px;
     
-    font-family: var(--font-famili__public);
     font-size: var(--h4-font-size);
     letter-spacing: 0.04em;
 
@@ -84,7 +84,6 @@
 
   max-width: 570px;
 
-  font-family: var(--font-famili__public);
   font-size: 1.1em;
   font-weight: 300;
 

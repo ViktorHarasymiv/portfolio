@@ -86,12 +86,14 @@ h2 {
 	margin: 0;
 
 	font-size: var(--h2-font-size);
+	font-weight: inherit;
 	line-height: 1;
 }
 
 h3,
 h3>span {
 	font-family: inherit;
+	font-weight: inherit;
 	font-size: var(--h3-font-size);
 }
 
