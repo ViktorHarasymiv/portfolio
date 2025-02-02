@@ -2,6 +2,38 @@
   <div class="header_wrapper container">
     <div class="header_content">
       <a href="#" class="header_ico __ico">Harasymiv.</a>
+      <nav class="header_navigation">
+        <ul class="header_list">
+          <li
+            onclick="openModal()"
+            class="header_nav--item __link __active-section"
+          >
+            <a href="#intro--section" class="header_nav_link">Intro</a>
+          </li>
+          <li onclick="openModal()" class="header_nav--item __link">
+            <a href="#about--section" class="header_nav_link">About</a>
+          </li>
+          <li class="header_nav--item __link">
+            <a href="#work--section" class="header_nav_link">Works </a>
+            <div class="works--sub_nav">
+              <ul class="works--sub_list">
+                <li onclick="openModal()" class="header_nav--item __link">
+                  <a href="#portfolio--section">My Portfolio</a>
+                </li>
+                <li onclick="openModal()" class="header_nav--item __link">
+                  <a href="#experience--section">Work Experience</a>
+                </li>
+                <li onclick="openModal()" class="header_nav--item __link">
+                  <a href="#skills--section">Skills</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li onclick="openModal()" class="header_nav--item __link">
+            <a href="#contact--section" class="header_nav_link">Contact</a>
+          </li>
+        </ul>
+      </nav>
       <svg
         onclick="openModal()"
         class="ham hamRotate ham4"
@@ -19,43 +51,6 @@
           d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
         />
       </svg>
-      <nav class="header_navigation">
-        <ul class="header_list">
-          <li class="header_nav--item">
-            <a
-              href="#scroll--to_top"
-              class="header_nav_link __link __active-section"
-              >Intro</a
-            >
-          </li>
-          <li class="header_nav--item">
-            <a href="#about--section" class="header_nav_link __link">About</a>
-          </li>
-          <li class="header_nav--item works_item">
-            <a href="#portfolio--section" class="header_nav_link __link"
-              >Works</a
-            >
-            <div class="works--sub_nav">
-              <ul class="works--sub_list">
-                <li class="works--sub_item">
-                  <a href="#portfolio--section">My Portfolio</a>
-                </li>
-                <li class="works--sub_item">
-                  <a href="#experience--section">Work Experience</a>
-                </li>
-                <li class="works--sub_item">
-                  <a href="#skills--section">Skills</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="header_nav--item">
-            <a href="#contact--section" class="header_nav_link __link"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
     </div>
   </div>
 </header>

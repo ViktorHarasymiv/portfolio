@@ -81,6 +81,11 @@ main {
   opacity: 1;
 }
 
+.header_nav--item.__active-section .__link {
+  width: 100%;
+  opacity: 1;
+}
+
 /* Buttons */
 
 .__button {

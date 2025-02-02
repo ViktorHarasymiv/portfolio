@@ -6,7 +6,7 @@
     const hdr = document.querySelector('.header');
     const hero = document.querySelector('#intro--section');
 
-    const mobileNav = document.querySelector('.header_modal--navigation');
+    const mobileNav = document.querySelector('.header_navigation');
 
     let triggerHeight;
 
