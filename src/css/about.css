@@ -1,11 +1,17 @@
 .about--paragraph {
     position: relative;
 
+    font-family: var(--font-famili__public);
     font-size: var(--paragraph);
 
-    letter-spacing: .02em;
-    line-height: 2.5;
-    word-break: break-all;
+    letter-spacing: .05em;
+    line-height: 1.7;
+
+    text-wrap:balance;
+}
+
+.paragraph_selected-text {
+    color: var(--color-1);
 }
 
 .letter-j {
@@ -17,11 +23,11 @@
 
     content: "";
 
-    width:27px;
-    height: 40px;
+    width:45px;
+    height: 65px;
 
-    top: -12px;
-    left: -26px;
+    top: -34px;
+    left: -41px;
 
     background-image: url(./../img/letter-j.svg);
 
@@ -29,14 +35,9 @@
     background-size: contain;
 }
 
-.paragraph_selected-text {
-    font-size: var(--paragraph_selected);
-    letter-spacing: .08em;
-    color: var(--color-1);
-}
 
 .p-1 {
-    margin-left: 35px;
+    margin-left: 45px;
 }
 
 @media screen and (max-width:899.98px) {
@@ -54,6 +55,15 @@
     .about--paragraph::before {
         top: -12.5px;
         left: 4px;
+    }
+
+    .letter-j::before { 
+        width: 35px;
+        height: 45px;
+
+        
+    top: -30px;
+    left: -28px;
     }
 }
 

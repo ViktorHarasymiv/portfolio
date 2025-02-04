@@ -22,17 +22,31 @@
       document.documentElement.classList.remove('no-js');
       document.documentElement.classList.add('js');
     </script>
+
+    <!-- EmailJS -->
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: 'bxmLyFaqufNsZmbxb',
+        });
+      })();
+    </script>
   </head>
   <body id="scroll--to_top">
     <!-- Preloader -->
 
-    <div id="preloader">
+    <!-- <div id="preloader">
       <div id="loader" class="dots-fade">
         <div></div>
         <div></div>
         <div></div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Header -->
 
@@ -56,11 +70,13 @@
     <load src="./partials/footer.html" />
 
     <script type="module" src="./main.js"></script>
+    <script src="/js/mailer.js"></script>
+
     <script src="/js/preloader.js"></script>
     <script src="/js/pageScroll.js"></script>
     <script src="/js/animText.js"></script>
     <script src="/js/moveHeader.js"></script>
-    <!-- <script src="/js/navigation.js"></script> -->
+
     <script src="/js/mobileMenu.js"></script>
     <script src="/js/skills.js"></script>
     <script src="/js/portfolio.js"></script>
