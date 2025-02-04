@@ -136,7 +136,7 @@ main {
   padding-top: var(--section--padding-top);
 }
 
-.section_title {
+.section--title {
   margin-bottom: calc(3.5 * (2rem * 1));
   color: inherit;
   line-height: 1;
@@ -148,12 +148,12 @@ main {
   color: var(--color-1);
 }
 
-.backdrop-title {
+.backdrop--title {
   position: relative;
   z-index: 1;
 }
 
-.backdrop-title::after {
+.backdrop--title::after {
   content: attr(data-num);
 
   font-family: var(--font-famili__public);
@@ -171,11 +171,11 @@ main {
   opacity: 0.1;
 }
 
-.footer .section_title {
+.footer .section--title {
   color: var(--c-white);
 }
 
-.footer .backdrop-title::after {
+.footer .backdrop--title::after {
   font-size: 3.3em;
   color: var(--color-gray-11);
 }
