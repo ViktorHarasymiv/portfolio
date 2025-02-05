@@ -37,7 +37,7 @@ main {
 .__link {
   position: relative;
 
-  font-size: var(--base-font-size-nav);
+  font-size: var(--base-font-size);
   color: var(--color-gray-14);
 
   transition: all 0.3s ease-in-out;

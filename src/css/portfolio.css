@@ -36,7 +36,11 @@
 }
 
 .portfolio--item_previewScreen img {
-    max-width: 500px;   
+    width: 500px;
+    max-height: 320px;
+
+    object-fit: cover;
+    object-position: top;
 }
 
 .portfolio--item_data {
@@ -69,15 +73,16 @@
 
     top: 10px;
 
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
 }
 
-.portfolio--item_title:hover {
+.portfolio--item_title:hover{
     color: var(--color-1);
 
     text-decoration: underline;
 }
+    
 
 .portfolio--item_about {
   margin-bottom: 30px;
@@ -176,7 +181,7 @@
 }
 
 .portfolio--overlay_image {
-    width: 530px;
+    width: 800px;
     object-fit: cover;
 
     animation: animImage .3s linear;

@@ -67,8 +67,6 @@
   max-width: 1248px;
 }
 
-
-
 .works_item {
   position: relative;
 }
@@ -77,11 +75,11 @@
   z-index: 9999;
   position: absolute;
 
-  right: -50%;
+  right: -70px;
   top: 44.5px;
 
-  width: 200px;
-  height: 100px;
+  width: 220px;
+  height: 120px;
 
   display: flex;
   flex-direction: column;
@@ -98,12 +96,7 @@
   transition: transform 0.4s .4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.works--sub_nav:hover { 
-  background-color    : var(--color-3-dark);
-}
-
 .header_nav--item:hover .works--sub_nav {
-
   transform: scaleY(1);
 }
 
@@ -114,7 +107,9 @@
 .works--sub_list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
+
+  font-family: var(--font-famili__public);
 }
 
 .works--sub_list a {
@@ -125,7 +120,8 @@
   font-family: var(--font-famili__public);
 }
 
-@media only screen and (min-width: 900.98px) { 
+@media only screen and (min-width: 900px) { 
+
   .header {
 
     height: 72px;
@@ -162,7 +158,7 @@
   position    : absolute;
 
   top         : 80px;
-  left: 0;
+  left        : 0;
   
 
   background-color: var(--color-3);
@@ -172,15 +168,70 @@
   transform: scaleY(1);
  }
 
- .header_list {
-  padding:  30px 24px;
+ .header_list {  
+  padding:  30px;
+
   flex-direction: column;
   align-items: start;
-
  }
 
  .works--sub_nav {
-  top: 0;
+  top: -50px;
   left: 80px;
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+
+  border-top: none;
+  border-left: 3px solid rgba(255, 255, 255, 0.08);
+
+
+  transform: scaleX(0);
+  transform-origin: left top;
  }
+
+ .works--sub_nav:hover {
+  transform: scaleX(1);
+ }
+
+ .sub--menu__works {
+  position: relative;
+}
+
+.sub--menu__works::after {
+  position: absolute;
+
+  content: '';
+
+  top: 5px;
+  right: -20px;
+
+  background: url('./../public/icons/triangle-arrow.png') no-repeat;
+
+  background-size: cover;
+
+  width: 11px;
+  height: 11px;
+
+  transform: rotate(30deg);
+
+  animation: 2.5s linear 1s infinite alternate playArrow;
+}
+
+@keyframes playArrow {
+  0% {
+    right: -20px;
+    opacity: 0.8;
+  }
+  50% {
+    right: -25px;
+    opacity: 0.5;
+  }
+
+  100% {
+    right: -20px;
+    opacity: 0.8;
+  }
+}
+
 }
