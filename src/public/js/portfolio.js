@@ -25,7 +25,7 @@ const portfolioItems = [
         id: 0,
         previewScreen: "futureTech.jpg",
         data: "December 2024",
-        title: "FutureTech Features",
+        title: "FutureTech",
         url : "https://viktorharasymiv.github.io/createX/",
         alt : "https://viktorharasymiv.github.io/createX/",
         fullImage : "futureTech.jpg",
@@ -52,21 +52,21 @@ const portfolioItems = [
         previewScreen: "interno.jpg",
         data: "September 2024",
         title: "Interno",
-        url : "https://viktorharasymiv.github.io/createX/",
-        alt : "https://viktorharasymiv.github.io/createX/",
-        fullImage : "interno.jpg",
+        url : "https://intterno.netlify.app/",
+        alt : "Interno",
+        fullImage : "intterno.netlify.app_.jpg",
         about: "Minimalistic,based on SPA with integration of several technologies: Vite, TypeScript, React, React Router, Redux, Redux Toolkit, Redux Persist, Formik, Yup, classNames, PostCSS, Vite SVG icon, Vitest etc.",
         skills: [skillsValue[0] , skillsValue[1] , skillsValue[3] , skillsValue[6] , skillsValue[7] , skillsValue[8] ] ,
     }],
 
     [{
         id: 3,
-        previewScreen: "shop.jpg",
+        previewScreen: "lalasia-wiktor.netlify.app_.jpg",
         data: "January 2025",
-        title: "Сlothing store",
-        url : "https://viktorharasymiv.github.io/createX/",
-        alt : "https://viktorharasymiv.github.io/createX/",
-        fullImage : "shop.jpg",
+        title: "Discover Furniture",
+        url : "https://lalasia-wiktor.netlify.app/",
+        alt : "https://lalasia-wiktor.netlify.app/",
+        fullImage : "lalasia-wiktor.netlify.app_.jpg",
         about: "Multi-page online store.",
         skills: [skillsValue[0] , skillsValue[1] , skillsValue[2] , skillsValue[3] , skillsValue[4] , skillsValue[6] , skillsValue[7] , skillsValue[8] ]  ,
     }]
@@ -88,7 +88,7 @@ function addItems(id) {
                  <ul class="portfolio--item_icons_list">
                    ${elem.skills
                     .map(skill =>
-                   `<li class="portfolio--item_link"><img src="icons/${skill}" width="22px" height="22px" class="portfolio--item_skill" /></li>`)
+                   `<li class="portfolio--item_link"><img src="icons/${skill}" width="18px" height="18px" class="portfolio--item_skill" /></li>`)
                     .join('')}
                  </ul>
               </div>
