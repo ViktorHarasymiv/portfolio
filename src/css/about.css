@@ -60,10 +60,9 @@
     .letter-j::before { 
         width: 35px;
         height: 45px;
-
-        
-    top: -30px;
-    left: -28px;
+    
+        top: -30px;
+        left: -28px;
     }
 }
 

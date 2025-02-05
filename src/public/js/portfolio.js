@@ -41,7 +41,7 @@ const portfolioItems = [
         title: "Createx",
         url : "https://viktorharasymiv.github.io/createX/",
         alt : "https://viktorharasymiv.github.io/createX/",
-        fullImage : "image.jpg",
+        fullImage : "createxFullScreen.jpg",
         about: "Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.",
         skills: [skillsValue[0] , skillsValue[1] , skillsValue[2] , skillsValue[3], skillsValue[4] , skillsValue[6] , skillsValue[7] , skillsValue[8] ]
     
