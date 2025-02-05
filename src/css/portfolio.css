@@ -275,8 +275,8 @@
 @media screen and (max-width:599.98px) { 
 
     .image_scroll_box {
-        width: 80vw;
-        height: 58vh;
+        width: 90vw;
+        height: 65vh;
     }
 
     .portfolio--item_content {
@@ -305,7 +305,7 @@
  
     .close_modal { 
         right: 20px;
-        top: 130px;
+        top: 100px;
     }
 
 }
