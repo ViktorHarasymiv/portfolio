@@ -1,4 +1,5 @@
 'use strict'
+ import send from './sendmail.php';
 
 document.addEventListener('DOMContentLoaded' , function () {
 
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded' , function () {
         let formData = new FormData(form);
         console.log(formData);
 
-            let response = await fetch('sendmail.php' , {
+            let response = await fetch(`${send}` , {
                 method: 'POST',
                 body: formData,
                 mode: 'no-cors'
