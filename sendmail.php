@@ -2,11 +2,12 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'path/to/PHPMailer/src/Exception.php';
-require 'path/to/PHPMailer/src/PHPMailer.php';
-require 'path/to/PHPMailer/src/SMTP.php';
+require 'vendor/autoload.php'
 
 $mail = new PHPMailer(true);
+
+try {
+
 $mail ->CharSet = 'UTF - 8';
 $mail ->setLanguage('ua', 'phpmailer/language/');
 $mail ->IsHTML(true);
