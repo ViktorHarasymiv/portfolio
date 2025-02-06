@@ -24,18 +24,18 @@
 
     <!-- EmailJS -->
     <script type="module" crossorigin src="/portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-BKwPlE2f.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-D8BYU1Ds.css">
   </head>
   <body id="scroll--to_top">
     <!-- Preloader -->
 
-    <div id="preloader">
+    <!-- <div id="preloader">
       <div id="loader" class="dots-fade">
         <div></div>
         <div></div>
         <div></div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Header -->
 
@@ -309,7 +309,7 @@
                 name="name"
                 id="name"
                 placeholder="Your name"
-                class="form--input_box"
+                class="form--input_box _req"
                 required
               />
             </label>
@@ -319,7 +319,7 @@
                 name="email"
                 id="email"
                 placeholder="Your email"
-                class="form--input_box"
+                class="form--input_box _req"
                 required
               />
             </label>
@@ -329,9 +329,16 @@
               id="message"
               name="message"
               placeholder="Project details"
-              class="form--input_box"
+              class="form--input_box _req"
               required
             ></textarea>
+          </label>
+          <label for="checkbox" class="checkbox--input">
+            <input type="checkbox" name="checkbox" checked class="_req" />
+            <span class="custom-checkbox"></span>
+            <span class="checkbox--input_text">
+              I agree to the processing, use and transfer of personal data
+            </span>
           </label>
         </div>
         <button type="submit" class="form--send_button __button">
@@ -614,7 +621,7 @@
 </footer>
 
 
-    <script src="/portfolio/js/mailer.js"></script>
+    <script src="/portfolio/js/formValidator.js"></script>
 
     <script src="/portfolio/js/preloader.js"></script>
     <script src="/portfolio/js/pageScroll.js"></script>
