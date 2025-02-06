@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded' , function () {
 
             let response = await fetch('sendmail.php' , {
                 method: 'POST',
-                body: formData
+                body: formData,
+                mode: 'no-cors'
             });
             if(response.ok) {
                 form.reset();
