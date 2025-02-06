@@ -37,7 +37,7 @@
                 name="name"
                 id="name"
                 placeholder="Your name"
-                class="form--input_box"
+                class="form--input_box _req"
                 required
               />
             </label>
@@ -47,7 +47,7 @@
                 name="email"
                 id="email"
                 placeholder="Your email"
-                class="form--input_box"
+                class="form--input_box _req"
                 required
               />
             </label>
@@ -57,9 +57,16 @@
               id="message"
               name="message"
               placeholder="Project details"
-              class="form--input_box"
+              class="form--input_box _req"
               required
             ></textarea>
+          </label>
+          <label for="checkbox" class="checkbox--input">
+            <input type="checkbox" name="checkbox" checked class="_req" />
+            <span class="custom-checkbox"></span>
+            <span class="checkbox--input_text">
+              I agree to the processing, use and transfer of personal data
+            </span>
           </label>
         </div>
         <button type="submit" class="form--send_button __button">

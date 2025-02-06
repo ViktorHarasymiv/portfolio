@@ -56,7 +56,7 @@ const portfolioItems = [
         alt : "Interno",
         fullImage : "intterno.netlify.app_.jpg",
         about: "Minimalistic,based on SPA with integration of several technologies: Vite, TypeScript, React, React Router, Redux, Redux Toolkit, Redux Persist, Formik, Yup, classNames, PostCSS, Vite SVG icon, Vitest etc.",
-        skills: [skillsValue[0] , skillsValue[1] , skillsValue[3] , skillsValue[6] , skillsValue[7] , skillsValue[8] ] ,
+        skills: [skillsValue[0] , skillsValue[1] , skillsValue[3] , skillsValue[6] , skillsValue[8] ] ,
     }],
 
     [{
@@ -68,7 +68,7 @@ const portfolioItems = [
         alt : "https://lalasia-wiktor.netlify.app/",
         fullImage : "lalasia-wiktor.netlify.app_.jpg",
         about: "Multi-page online store.",
-        skills: [skillsValue[0] , skillsValue[1] , skillsValue[2] , skillsValue[3] , skillsValue[4] , skillsValue[6] , skillsValue[7] , skillsValue[8] ]  ,
+        skills: [skillsValue[0] , skillsValue[1] , skillsValue[3] , skillsValue[4] , skillsValue[6] ,  skillsValue[8] ]  ,
     }]
 ]
 
