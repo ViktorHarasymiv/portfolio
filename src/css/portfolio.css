@@ -37,7 +37,7 @@
 
 .portfolio--item_previewScreen img {
     width: 500px;
-    max-height: 320px;
+    height: 400px;
 
     object-fit: cover;
     object-position: top;
