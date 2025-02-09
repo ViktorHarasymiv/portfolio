@@ -203,15 +203,15 @@
 
   content: '';
 
-  top: 5px;
+  top: 8px;
   right: -20px;
 
   background: url('./../public/icons/triangle-arrow.png') no-repeat;
 
   background-size: cover;
 
-  width: 11px;
-  height: 11px;
+  width: 8px;
+  height: 8px;
 
   transform: rotate(30deg);
 
