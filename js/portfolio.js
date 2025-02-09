@@ -61,7 +61,7 @@ const portfolioItems = [
 
     [{
         id: 3,
-        previewScreen: "lalasia-wiktor.netlify.app_.jpg",
+        previewScreen: "lalasiaSmoll.jpg",
         data: "January 2025",
         title: "Discover Furniture",
         url : "https://lalasia-wiktor.netlify.app/",
