@@ -46,3 +46,24 @@ let addSoftSkill = softSkills.map((soft) =>
 
 skillList[0].insertAdjacentHTML("beforeend", addHardSkill);
 skillList[1].insertAdjacentHTML("beforeend", addSoftSkill);
+
+/*  Tabs  */
+
+const tabsLink = document.querySelectorAll('.skill--tabs_link');
+let line = document.querySelector('.liner');   
+
+tabsLink.forEach((tab, index)=> {
+    tab.addEventListener('click' , (event) => {
+        tabsLink.forEach(tab => {tab.classList.remove('active')});
+        tab.classList.add('active');
+
+        line.style.width = tab.offsetWidth + "px";
+        line.style.left = tab.offsetLeft + "px";
+
+        skillList.forEach(content => {
+            content.classList.remove('active');
+            skillList[index].classList.add('active');
+        })
+
+  })
+})
