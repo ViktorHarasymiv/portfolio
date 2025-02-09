@@ -5,6 +5,8 @@
     font-family: var(--font-famili__public);
 
     box-shadow: var(--shadowBefore);
+    
+    background-color: var(--color-gray-7);
 }
 
 .portfolio--list {
@@ -26,12 +28,13 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    
 
     background-color: var(--color-gray-7);
 }
 
 .portfolio--item_previewScreen img {
+    width: 100%;
+    
     width: 580px;
 
     height: 380px;
@@ -292,7 +295,8 @@
 
  /* MEDIA */
 
- @media screen and (max-width:1119.98px) { 
+ @media screen and (max-width:1119.98px) {
+
     .portfolio--item {
         max-height: 750px;
 
@@ -303,30 +307,29 @@
         overflow: hidden;
 
     }
-    .portfolio--item_content {
-        margin-left: 0px;
 
-        height: 100%;
-    }
 
     .portfolio--item_previewScreen {
         width: 100%;
-        
-        height: 450px;
+
+        background: var(--color-gray-7);
     }
 
     .portfolio--item_previewScreen img {
         width: 100%;
-        height: 100%;
-    }
+        height: 350px;
 
-    .portfolio--item_about { 
-        flex-grow: 0;
+        object-fit: contain;
     }
 
  }
 
 @media screen and (max-width:899.98px) {
+
+    .portfolio--item_previewScreen img {
+        object-fit: cover;
+    }
+
     .close_modal {
    
         top: 28px;
@@ -346,6 +349,12 @@
 
     .portfolio--item_content {
         padding: 20px 15px;
+
+        height: 100%;
+    }
+
+    .portfolio--item_about {
+        min-height: 100%;
     }
 
     .experience--skills_list {

@@ -194,4 +194,12 @@ main {
   .section {
     padding-top: var(--m-section--padding-top);
   }
+
+  #about--section,
+  #skills--section,
+  #experience--section,
+  #portfolio--section {
+   scroll-margin-top: -20px;
+  }
+
 }
