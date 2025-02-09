@@ -24,18 +24,18 @@
 
     <!-- EmailJS -->
     <script type="module" crossorigin src="/portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-a_6Z8Ps1.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CuaGJMqr.css">
   </head>
   <body id="scroll--to_top">
     <!-- Preloader -->
 
-    <!-- <div id="preloader">
+    <div id="preloader">
       <div id="loader" class="dots-fade">
         <div></div>
         <div></div>
         <div></div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Header -->
 
@@ -136,19 +136,19 @@
       <p class="intro--title_label">Hello</p>
       <h1 class="intro--title"></h1>
       <span class="intro--text__quality">a Full Stack Developer.</span>
-      <div class="swiper mySwiper" style="margin: 0">
+      <div class="swiper _text mySwiper" style="margin: 0">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" data-swiper-parallax-opacity="0.5">
+          <div class="swiper-slide _text">
             <p class="intro--title_label intro--subb--text_title">
               I can do some great things for you
             </p>
           </div>
-          <div class="swiper-slide" data-swiper-parallax-opacity="0.5">
+          <div class="swiper-slide _text">
             <p class="intro--title_label intro--subb--text_title">
               I am capable of remarkable achievements for you
             </p>
           </div>
-          <div class="swiper-slide" data-swiper-parallax-opacity="0.5">
+          <div class="swiper-slide _text">
             <p class="intro--title_label intro--subb--text_title">
               I am ready to assist you in incredible endeavors
             </p>
@@ -166,7 +166,7 @@
       <picture>
         <source />
         <img
-          src="/portfolio/assets/my-bgOptim-AMlboPrZ.jpg"
+          src="/portfolio/assets/photo_wiktor%20v2-CAdiBZnQ.png"
           alt="FrontEnd Developer"
           class="intro--foto"
           width="790px"
@@ -279,7 +279,13 @@
       My <span class="section_custom_text">Portfolio.</span>
     </h2>
     <div class="portfolio--box">
-      <ul class="portfolio--list"></ul>
+      <div class="swiper mySwiperPortfolio">
+        <ul class="portfolio--list swiper-wrapper"></ul>
+        <div class="swipe--button">
+          <div class="swiper-button-next" style="bottom: 100px"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -650,11 +656,27 @@
     <!-- Initialize Swiper -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-      var swiper = new Swiper('.mySwiper', {
+      var swiperText = new Swiper('.mySwiper', {
         autoplay: {
           delay: 4500,
         },
+      });
+    </script>
+
+    <script>
+      var swiperPortfolio = new Swiper('.mySwiperPortfolio', {
+        cssMode: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        mousewheel: true,
+        keyboard: true,
       });
     </script>
   </body>
