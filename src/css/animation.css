@@ -1,0 +1,46 @@
+section .animate{
+    opacity     : 0;
+    transition  : 1.4s;
+}
+
+.show-animation {
+    transition  : .3s;
+}
+
+/*  HEADER  */
+
+.header.animate  {
+    transform: translateY(-100px);
+}
+
+.header.animate {
+    opacity: 1;
+    transition-delay: 2.45s;
+    transform: translateY(0);
+}
+
+/* INTRO SECTION */
+
+/*  I - 1  */
+
+section .intro--text_content.animate {
+    transform: translateX(100%);
+}
+
+section.show-animation .intro--text_content {
+    opacity: 1;
+    transition-delay: .45s;
+    transform: translateX(0);
+}
+
+/*  I - 2  */
+
+section .intro--button_box.animate.i-2 {
+    transform: translateY(100%);
+}
+
+section.show-animation .intro--button_box.animate.i-2 {
+    opacity: 1;
+    transition-delay: 1.45s;
+    transform: translateY(0);
+}
