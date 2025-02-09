@@ -3,6 +3,16 @@
     text-align  : center;
 }
 
+.swiper-slide._text {
+    display: block;
+    justify-content: start !important;
+    background: inherit;
+}
+
+.swiper._text { 
+    overflow: hidden !important;
+}
+
 @media only screen and (min-width: 1200px) { 
     .mySwiper {
         width          : clamp(375px, 32rem, 620px);

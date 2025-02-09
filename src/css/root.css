@@ -9,7 +9,7 @@
     --base-font-weight :  400;
     --base-line-height :  1.5;
 
-    --h1-font-size: clamp(3.5rem, 4.6vw, 6.5rem);
+    --h1-font-size: clamp(3.5rem, 4.3vw, 6rem);
     --h1-mobile: clamp(3.3rem, 8.2vw, 8.8rem);
 
     --h2-font-size: clamp(2.8rem, 3.8vw, 5.8rem);
@@ -17,12 +17,12 @@
     --h3-font-size: clamp(2.3rem, 3.3vw, 5.3rem);
     --h4-font-size: clamp(1.5rem, 2vw, 4rem);
 
-    --section--padding-top: calc(5 * (2.4rem * 1));
+    --section--padding-top: calc(6.5 * (2.4rem * 1));
     --m-section--padding-top: calc(4 * (2.4rem * 1));
 
     --section--margin-top: calc(3 * (2.4rem * 1));
     
-    --quality-text: clamp(1.5rem, 3.2vw, 4.3rem);
+    --quality-text: clamp(1.5rem, 2.8vw, 4.3rem);
     --subb-title__text: clamp(0.8rem, 1.1vw, 2rem);
     --skills-item-size: clamp(0.6rem, 0,9vw, 1.5rem);
 
@@ -62,7 +62,7 @@
     --box-shadow-4: -8px -8px 12px hsla(0, 0%, 100%, .8), 8px 8px 12px rgba(0, 0, 0, .05);
     --box-shadow-4-transparent: -8px -8px 12px hsla(0, 0%, 100%, 0), 8px 8px 12px transparent;
     --box-shadow-5: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px var(--c-accent);
-    --box-shadow-6: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 20px rgba(0, 0, 0, .25);
+    --box-shadow-6: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 40px rgba(0, 0, 0, .25);
     --box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, .015), inset 8px 4px 20px 12px rgba(0, 0, 0, .8);
     --box-shadow-inset-transparent: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0), inset 8px 4px 20px 12px transparent;
     --box-shadow-inset-2: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
