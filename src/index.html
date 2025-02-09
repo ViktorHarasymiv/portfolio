@@ -28,13 +28,13 @@
   <body id="scroll--to_top">
     <!-- Preloader -->
 
-    <!-- <div id="preloader">
+    <div id="preloader">
       <div id="loader" class="dots-fade">
         <div></div>
         <div></div>
         <div></div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Header -->
 
@@ -73,11 +73,27 @@
     <!-- Initialize Swiper -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-      var swiper = new Swiper('.mySwiper', {
+      var swiperText = new Swiper('.mySwiper', {
         autoplay: {
           delay: 4500,
         },
+      });
+    </script>
+
+    <script>
+      var swiperPortfolio = new Swiper('.mySwiperPortfolio', {
+        cssMode: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        mousewheel: true,
+        keyboard: true,
       });
     </script>
   </body>

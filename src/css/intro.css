@@ -1,4 +1,6 @@
 #intro--section {
+    position         : relative;
+
     height           : 100vh;
 
     background-image : url(/img/intro/foto.JPG);
@@ -10,6 +12,8 @@
 
     display          : flex;
     justify-content  : space-between;
+
+    flex-direction: row-reverse;
 }
 
 .intro--text_content {
@@ -156,7 +160,7 @@ align-items     : center;
     }
 
     .intro--text_content {
-        width           : auto;
+        width: 41vw;
         height          : auto;
 
 
@@ -176,24 +180,27 @@ align-items     : center;
     .intro--title { 
         padding:  0;
 
+        width: 100%;
+
         font-size: var(--h1-font-size);
         color: inherit;
         text-align: left;
     }
 
     .intro--text__quality {
+        margin-bottom: 15px;
         color: var(--color-black);
     }
 
     .intro--title_label {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .intro--subb--text_title {
-        margin-bottom: 120px;
+        margin-bottom: 160px;
         
         line-height: 1;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     
@@ -203,10 +210,21 @@ align-items     : center;
         z-index    : -1;
     
         position   : absolute;
-        right      : 0;
+        bottom     : 0;
+        left       : 0;
     
         width      : 50vw;
-        height     : 100vh;
+        height     : 89.5vh;
+
+        
+        filter: drop-shadow(0 0 1.75rem rgb(187, 187, 187)) contrast(130%);
+    }
+
+    .intro--background_image img {
+        position: absolute;
+        bottom: 0;
+        max-width: 800px;
+        max-height: 760px;
     }
     
     .intro--button_box { 

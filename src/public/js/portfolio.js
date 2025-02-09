@@ -77,7 +77,8 @@ const portfolioItems = [
 
 function addItems(id) {
     let addPortfolioItem = portfolioItems[id].map(elem =>
-        `<li class="portfolio--item">
+        `
+        <li class="portfolio--item swiper-slide">
               <a onclick="showFullScreenImg(event, ${id})" href="" class="portfolio--item_previewScreen">
                  <img src="${elem.previewScreen}" data-id="${elem.fullImage}" />
               </a>
@@ -91,7 +92,6 @@ function addItems(id) {
                    `<li class="portfolio--item_link"><img src="icons/${skill}" width="18px" height="18px" class="portfolio--item_skill" /></li>`)
                     .join('')}
                  </ul>
-              </div>
             </li>
         `).join('')
         

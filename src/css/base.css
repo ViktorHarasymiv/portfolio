@@ -25,6 +25,13 @@ main {
   overflow: hidden;
 }
 
+#about--section,
+#skills--section,
+#experience--section,
+#portfolio--section {
+  scroll-margin-top: -80px;
+}
+
 .lock-scroll {
   overflow: hidden;
 }
@@ -139,7 +146,7 @@ main {
 }
 
 .section--title {
-  margin-bottom: calc(3.5 * (2rem * 1));
+  margin-bottom: calc(5.5 * (2rem * 1));
   color: inherit;
   line-height: 1;
 }
