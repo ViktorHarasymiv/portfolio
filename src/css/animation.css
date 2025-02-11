@@ -71,3 +71,72 @@ section.show-animation .about--paragraph.animate {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
+/* SKILL SECTION */
+
+.skills--section_box.animate {
+    transform: translateY(-30px);
+
+}
+
+.skills--section_box.animate {
+    transition-delay: .45s;
+}
+
+section.show-animation .skills--section_box.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Experience SECTION */
+
+
+.experience--box.animate {
+    transform: translateY(-30px);
+
+}
+
+.experience--box.animate {
+    transition-delay: .45s;
+}
+
+section.show-animation .experience--box.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* PORTFOLIO SECTION */
+
+
+.portfolio--box.animate {
+    transform: translateY(-30px);
+
+}
+
+.portfolio--box.animate {
+    transition-delay: .45s;
+}
+
+section.show-animation .portfolio--box.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* CONTACT SECTION */
+
+
+.contact--content_wrapper.animate {
+    transform: translateY(-30px);
+
+}
+
+.contact--content_wrapper.animate {
+    transition-delay: .45s;
+}
+
+section.show-animation .contact--content_wrapper.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
