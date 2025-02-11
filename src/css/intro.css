@@ -223,8 +223,8 @@ align-items     : center;
     .intro--background_image img {
         position: absolute;
         bottom: 0;
-        max-width: 800px;
-        max-height: 760px;
+        max-width: 730px;
+        max-height: 710px;
     }
     
     .intro--button_box { 

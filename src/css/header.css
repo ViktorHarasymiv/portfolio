@@ -5,6 +5,7 @@
 
   width        : 100%;
   height       : 80px;
+  
 }
 
 .header_wrapper {
@@ -34,10 +35,10 @@
 /*  Sticky header  */
 
 .header.offset {
-  transform            : translateY(-100%);
+  transform          : translateY(-100%);
 
-  transition-property  : transform;
-  transition-duration  : 0.5s;
+  transition-property: transform, background-color;
+  transition-duration: 0.5s;
 }
 
 .header.scrolling {
@@ -49,6 +50,7 @@
   opacity         : 0;
   visibility      : hidden;
   background-color: var(--color-3);
+  box-shadow      : var(--box-shadow-6);
   border          : none;
   border-bottom   : 1px solid rgba(255, 255, 255, 0.03);
 
