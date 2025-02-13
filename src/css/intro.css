@@ -1,7 +1,5 @@
 #intro--section {
     position         : relative;
-
-    height           : 100vh;
 }
 
 .intro--wrapper {
@@ -96,7 +94,7 @@ align-items     : center;
     position: absolute;
 
     left: -60px;
-    bottom: -15px;
+    bottom: 0px;
 
     max-width: 740px;
     max-height: 710px;
