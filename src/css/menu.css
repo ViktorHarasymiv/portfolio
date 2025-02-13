@@ -30,12 +30,15 @@
   .ham4 .top {
     stroke-dasharray: 40 121;
   }
+  
   .ham4 .bottom {
     stroke-dasharray: 40 121;
   }
+
   .ham4.active .top {
     stroke-dashoffset: -68px;
   }
+
   .ham4.active .bottom {
     stroke-dashoffset: -68px;
   }

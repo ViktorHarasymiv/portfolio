@@ -198,7 +198,7 @@
 
  .sub--menu__works {
   position: relative;
-}
+ }
 
 .sub--menu__works::after {
   position: absolute;
@@ -208,7 +208,7 @@
   top: 8px;
   right: -20px;
 
-  background: url('./../public/icons/triangle-arrow.png') no-repeat;
+  background: url('./../public/image/icons/triangle-arrow.png') no-repeat;
 
   background-size: cover;
 
@@ -218,7 +218,7 @@
   transform: rotate(30deg);
 
   animation: 2.5s linear 1s infinite alternate playArrow;
-}
+ }
 
 @keyframes playArrow {
   0% {
@@ -234,6 +234,5 @@
     right: -20px;
     opacity: 0.8;
   }
-}
-
+ }
 }
