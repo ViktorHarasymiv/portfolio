@@ -63,7 +63,7 @@ body.ss-show .intro--background_image.animate {
 }
 
 .about--paragraph.animate {
-    transition-delay: .45s;
+    transition-delay: .35s;
 }
 
 section.show-animation .section--title.animate,
@@ -78,11 +78,7 @@ section.show-animation .about--paragraph.animate {
 
 .skills--section_box.animate {
     transform: translateY(-30px);
-
-}
-
-.skills--section_box.animate {
-    transition-delay: .45s;
+    transition-delay: .35s;
 }
 
 section.show-animation .skills--section_box.animate {
@@ -95,11 +91,7 @@ section.show-animation .skills--section_box.animate {
 
 .experience--box.animate {
     transform: translateY(-30px);
-
-}
-
-.experience--box.animate {
-    transition-delay: .45s;
+    transition-delay: .35s;
 }
 
 section.show-animation .experience--box.animate {
@@ -112,11 +104,7 @@ section.show-animation .experience--box.animate {
 
 .portfolio--box.animate {
     transform: translateY(-30px);
-
-}
-
-.portfolio--box.animate {
-    transition-delay: .45s;
+    transition-delay: .35s;
 }
 
 section.show-animation .portfolio--box.animate {
@@ -129,11 +117,8 @@ section.show-animation .portfolio--box.animate {
 
 .contact--content_wrapper.animate {
     transform: translateY(-30px);
-
-}
-
-.contact--content_wrapper.animate {
     transition-delay: .45s;
+
 }
 
 section.show-animation .contact--content_wrapper.animate {

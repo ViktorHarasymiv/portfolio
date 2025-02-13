@@ -1,25 +1,33 @@
 'use strict'
 
-document.addEventListener('DOMContentLoaded' , function () {
+const form = document.querySelector('.contact--form');
 
-    const form = document.querySelector('.contact--form');
+form.addEventListener(('submit') , errorAlert);
 
-    // form.addEventListener('submit' , formSend);
+     function errorAlert(event) {
+        event.preventDefault();
 
-    async function formSend(e) {
-        e.preventDefault();
+        const formData = new FormData(form);
+        
 
-        // let error = formValidate(form);
-        let formData = new FormData(form);
-        console.log(formData);
+        alert(`Дорогий ${formData.get('name').trim()} ,відправка форми буде доступна при вигруженому проекті на хостинг`);
+        form.reset();
+     }
 
-            let response = await fetch('sendmail.php' , {
-                method: 'POST',
-                body: formData,
-                mode: 'no-cors'
-            });
-            if(response.ok) {
-                form.reset();
-            }
-        }
-    })
+    // async function formSend(e) {
+    //     e.preventDefault();
+
+    //     // let error = formValidate(form);
+    //     let formData = new FormData(form);
+    //     console.log(formData);
+
+    //         let response = await fetch('sendmail.php' , {
+    //             method: 'POST',
+    //             body: formData,
+    //             mode: 'no-cors'
+    //         });
+    //         if(response.ok) {
+    //             form.reset();
+    //         }
+    //     }
+    // })

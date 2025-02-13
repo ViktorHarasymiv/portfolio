@@ -15,12 +15,12 @@ $mail->isSMTP();                                            //Send using SMTP
 $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
 $mail->Username   = 'victorharasymiv97@gmail.com';                     //SMTP username
-$mail->Password   = 'dcum cxqr stzj wbjp';                               //SMTP password
+$mail->Password   = '';                               //SMTP password
 $mail->SMTPSecure = 'TLS';            //Enable implicit TLS encryption
 $mail->Port       = 465;                                    
 
 $mail ->CharSet = 'UTF - 8';
-$mail ->setLanguage('ua', 'phpmailer/language/');
+$mail ->setLanguage('ua, en', 'phpmailer/language/');
 $mail ->IsHTML(true);
 
 $mail->setForm('victorharasymiv97@gmail.com', 'Portfolio');

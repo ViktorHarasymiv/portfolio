@@ -26,7 +26,7 @@ const portfolioItems = [
         previewScreen: "futureTech.jpg",
         data: "December 2024",
         title: "FutureTech",
-        url : "https://viktorharasymiv.github.io/createX/",
+        url : "https://viktorharasymiv.github.io/future-tech-app/",
         alt : "https://viktorharasymiv.github.io/createX/",
         fullImage : "futureTech.jpg",
         about: "Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.",
@@ -80,7 +80,7 @@ function addItems(id) {
         `
         <li class="portfolio--item swiper-slide">
               <a onclick="showFullScreenImg(event, ${id})" href="" class="portfolio--item_previewScreen">
-                 <img src="${elem.previewScreen}" data-id="${elem.fullImage}" />
+                 <img src="image/${elem.previewScreen}" data-id="${elem.fullImage}" loading="lazy" />
               </a>
               <div class="portfolio--item_content">
                  <span class="portfolio--item_data">${elem.data}</span>
@@ -89,7 +89,7 @@ function addItems(id) {
                  <ul class="portfolio--item_icons_list">
                    ${elem.skills
                     .map(skill =>
-                   `<li class="portfolio--item_link"><img src="icons/${skill}" width="18px" height="18px" class="portfolio--item_skill" /></li>`)
+                   `<li class="portfolio--item_link"><img src="image/icons/${skill}" width="18px" height="18px" class="portfolio--item_skill" loading="lazy" /></li>`)
                     .join('')}
                  </ul>
             </li>
@@ -123,7 +123,13 @@ function showFullScreenImg(event) {
             
             <div class="portfolio--overlay">
             <div class="image_scroll_box">
-              <img onClick="closeModal()" src="${imageData.id}" class="portfolio--overlay_image" />
+              <img onClick="closeModal()" src="image/${imageData.id}" class="portfolio--overlay_image" loading="lazy"   />
+              <div class="scroll_animate">
+              <span>
+              Scroll Me
+              </span>
+              <img src="https://img.icons8.com/?size=100&id=37223&format=png&color=000000" width="24px" height="24px"/>
+              </div>
               </div>      
             </div>
                                  `
@@ -148,13 +154,8 @@ function closeModal() {
 }
 
 
-
 /* Initial function */ 
 
 for(let i = 0; i <= portfolioItems.length - 1; i++ ) {
     addItems(i);
 }
-
-
-
-
