@@ -200,7 +200,7 @@
   position: relative;
  }
 
-.sub--menu__works::after {
+ .sub--menu__works::after {
   position: absolute;
 
   content: '';
