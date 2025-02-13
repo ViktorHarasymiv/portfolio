@@ -21,7 +21,7 @@ window.onscroll = () => {
     if (HedHeight > top) {
         header.classList.remove('animate');
     }
-    if(top >= offset && top < offset + height) {
+    if(top >= offset && top < offset + 550 + height) {
         local.classList.add('show-animation');
     }
     else {

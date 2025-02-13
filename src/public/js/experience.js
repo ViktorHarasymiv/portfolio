@@ -65,7 +65,7 @@ experience.forEach(item => {
     <ul class="experience--skills_list">
     ${item.skills
         .map(skill =>
-       `<li class="portfolio--item_link"><img src="icons/${skill}" width="18px" height="18px" class="portfolio--item_skill" /></li>`)
+       `<li class="portfolio--item_link"><img src="image/icons/${skill}" width="18px" height="18px" class="portfolio--item_skill" /></li>`)
         .join('')}
     </ul>
     `
