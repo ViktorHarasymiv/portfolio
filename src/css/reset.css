@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 
 html {
 	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
   }
 
 body {

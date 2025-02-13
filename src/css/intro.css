@@ -2,9 +2,6 @@
     position         : relative;
 
     height           : 100vh;
-
-    background-image : url(/img/intro/foto.JPG);
-    background-size  : cover;
 }
 
 .intro--wrapper {
@@ -94,9 +91,16 @@ align-items     : center;
     font-size: var(--subb-title__text);
 }
 
-.intro--background_image { 
-    display      : none;
-}
+ .intro--background_image { 
+    z-index: -1;
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    max-width: 740px;
+    max-height: 710px;
+} 
 
 .intro--foto {
     width: 100%;
@@ -137,11 +141,10 @@ align-items     : center;
 }
 
 @media only screen and (min-width: 520.98px) { 
-    #intro--section { 
-        background-image : url(/img/intro/my-bgOptim.jpg);
+    /* #intro--section { 
+        background-image : url(/img/intro/ViktorFon.png);
         background-repeat: no-repeat;
-    }
-
+    } */
 }
 
 @media only screen and (min-width: 700.98px) {  
@@ -217,15 +220,10 @@ align-items     : center;
         height     : 89.5vh;
 
         
-        filter: drop-shadow(0 0 1.75rem rgb(187, 187, 187)) contrast(130%);
+        filter: drop-shadow(0 0 1.75rem rgb(161, 161, 161));
     }
 
-    .intro--background_image img {
-        position: absolute;
-        bottom: 0;
-        max-width: 730px;
-        max-height: 710px;
-    }
+  
     
     .intro--button_box { 
         width: 100%;
