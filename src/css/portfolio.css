@@ -354,7 +354,8 @@
 .swipe--button .swiper-button-next {
     padding: 3px 10px;
     border-radius: 5px;
-    background-color: var(--color-3);
+    background-color: var(--color-gray-16);
+    box-shadow: var(--box-shadow-4);
 }
 
 .swipe--button .swiper-button-prev {
@@ -363,6 +364,10 @@
 
 .swipe--button .swiper-button-next {
     right: 0;
+}
+
+.swiper-button-prev.swiper-button-disabled  {
+    box-shadow: none;
 }
 
  /* MEDIA */
@@ -403,8 +408,7 @@
         object-fit: cover;
     }
 
-    .close_modal {
-   
+    .close_modal {  
         top: 70px;
         right: 50px;
     
@@ -454,6 +458,10 @@
         top: 85px;
     }
 
+    .portfolio--item_icons_list {
+        gap: 12px;
+    }
+
     .swipe--button {
         width: 75px;
         top: -60px;
@@ -468,7 +476,7 @@
 
     .swipe--button .swiper-button-prev,
     .swipe--button .swiper-button-next {
-       padding: 0px 0px;
+       padding: 0px 1.5px;
        height: 30px;
     }
  }

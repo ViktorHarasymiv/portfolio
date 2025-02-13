@@ -89,7 +89,7 @@ function addItems(id) {
                  <ul class="portfolio--item_icons_list">
                    ${elem.skills
                     .map(skill =>
-                   `<li class="portfolio--item_link"><img src="image/icons/${skill}" width="18px" height="18px" class="portfolio--item_skill" loading="lazy" /></li>`)
+                   `<li class="portfolio--item_link"><img src="image/icons/${skill}" width="18px" height="18px" class="portfolio--item_skill" /></li>`)
                     .join('')}
                  </ul>
             </li>
@@ -126,7 +126,7 @@ function showFullScreenImg(event) {
               <img onClick="closeModal()" src="image/${imageData.id}" class="portfolio--overlay_image" loading="lazy"   />
               <div class="scroll_animate">
               <span>
-              Scroll Me
+              Scroll me
               </span>
               <img src="https://img.icons8.com/?size=100&id=37223&format=png&color=000000" width="24px" height="24px"/>
               </div>
