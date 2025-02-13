@@ -3,8 +3,7 @@
 }
 
 .intro--wrapper {
-    height           : 100%;
-
+    height           : calc(100vh - 40px);
     display          : flex;
     justify-content  : space-between;
 
@@ -15,7 +14,7 @@
 padding-top     : calc(20px + 4vh);
 
 width           : 100vw;
-height          : 100vh;
+height          : 100%;
 
 display         : flex;
 flex-grow       : 1;
@@ -25,7 +24,7 @@ align-items     : center;
 }
 
 .intro--title_label {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-transform: uppercase;
 
     font-family: var(--font-famili__public);
@@ -94,7 +93,7 @@ align-items     : center;
     position: absolute;
 
     left: -60px;
-    bottom: 0px;
+    bottom: 0;
 
     max-width: 740px;
     max-height: 710px;
