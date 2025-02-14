@@ -14,6 +14,7 @@ const skills = {
     Figma : "figma.svg",
     MoongoDB :"mongoDB.png",
     GitHub: "github.png",
+    SASS: "sass-ico.png"
 }
 
 const skillsValue = Object.values(skills);
@@ -23,14 +24,14 @@ const skillsValue = Object.values(skills);
 const portfolioItems = [
     [{
         id: 0,
-        previewScreen: "futureTech.jpg",
+        previewScreen: "_future-tech-app_prev.png",
+        fullImage : "_future-tech-app_FULL.png",
         data: "December 2024",
         title: "FutureTech",
         url : "https://viktorharasymiv.github.io/future-tech-app/",
         alt : "https://viktorharasymiv.github.io/createX/",
-        fullImage : "futureTech.jpg",
         about: "Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.",
-        skills: [skillsValue[0] , skillsValue[1] , skillsValue[2] , skillsValue[3], skillsValue[4] , skillsValue[6] , skillsValue[7] , skillsValue[8] ]
+        skills: [skillsValue[0] , skillsValue[9] , skillsValue[2] ,skillsValue[8] , skillsValue[6]]
     
     }],
 
@@ -89,7 +90,7 @@ function addItems(id) {
                  <ul class="portfolio--item_icons_list">
                    ${elem.skills
                     .map(skill =>
-                   `<li class="portfolio--item_link"><img src="image/icons/${skill}" width="18px" height="18px" class="portfolio--item_skill" /></li>`)
+                   `<li class="portfolio--item_link"><img src="image/icons/${skill}" width="20px" height="20px" class="portfolio--item_skill" /></li>`)
                     .join('')}
                  </ul>
             </li>

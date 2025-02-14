@@ -37,7 +37,7 @@
 .header.offset {
   transform          : translateY(-100%);
 
-  transition-property: transform, background-color;
+  transition-property: transform;
   transition-duration: 0.5s;
 }
 
