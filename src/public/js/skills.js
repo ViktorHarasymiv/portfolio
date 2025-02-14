@@ -1,22 +1,20 @@
 const hardSkills = [
             "HTML (HTML5), EJS, JSX",
-            "CSS (CSS3), SASS (SCSS), PostCSS, Bootstrap, Tailwind, Animations",
-            "JavaScript (ES6+, OOP), jQuery, TypeScript",
+            "CSS (CSS3), SASS (SCSS), Animations",
+            "JavaScript (ES6+, OOP), TypeScript",
             "React",
-            "Redux (Redux Toolkit, Redux Persist), MobX, Zustand",
-            "Formik, React Hook Form, Yup, Axios, React Router, React Query",
-            "Webpack, Vite, Gulp, Rollup",
-            "Jest, React Testing Library, Enzyme, Chai, Mocha, Vitest",
-            "REST API, WebSockets, Long Polling",
-            "BEM, Feature-Sliced Design, Accessibility, UX",
-            "Git (GitHub, BitBucket, GitLab)",
-            "Figma, Adobe Photoshop, Avocode",
-            "CMS 1C-Bitrix, Drupal, OpenCart, MODX",
-            "Basic understanding PHP, Blade, Twig",         
+            "Redux (Redux Toolkit)",
+            "Formik, React Hook Form, Axios, React Router, React Query",
+            "Vite, Gulp",
+            "REST API",
+            "BEM, Accessibility, UX",
+            "Git (GitHub, GitLab)",
+            "Figma, Adobe Photoshop",
+            "Basic understanding PHP",         
          ]
 
 const softSkills = [
-            "Agile, Waterfall, SCRUM",
+            "Agile, SCRUM",
             "English level - A2",
             "I am motivated to improve my skills, constantly studying new technologies in my field of activity",
             "I am demanding of the quality of my code, I follow the code-style",
@@ -26,9 +24,7 @@ const softSkills = [
             "I have time management skills",
             "I welcome constructive critic and am always happy to find new points of professional and personal growth",
             "I know how to solve conflict situations",
-            "I am correctly convey thoughts, formulate questions",
             "I write detailed reports on the work done, if required",
-            "I have experience working with a geographically distributed team (remote work)",
          ]
 
 
