@@ -29,6 +29,7 @@ align-items     : center;
 }
 
 .intro--text_content::after {
+    z-index: -1;
     position: absolute;
 
     content: '';
@@ -118,10 +119,10 @@ align-items     : center;
     right: 0;
     bottom: 0;
 
-   max-width: 95%;
-   height: auto;
+    max-width: 500px;
+    height: auto;
 
-   filter: contrast(110%) drop-shadow(0 0 2.75rem rgb(161, 161, 161));
+    filter: contrast(110%) drop-shadow(0 0 2.75rem rgb(161, 161, 161));
  }
 
 .intro--button_box { 
