@@ -40,7 +40,7 @@ const experience = [
         institution: 'GoIT - start your career in IT',
         technical: 'Full Stack Developer',
         about: 'Junior Fullstack Developer з повним циклом створення сучасних вебсайтів та вебзастосунків з нуля за 10 місяців',
-        skills: [skillsValueExp[0] , skillsValueExp[1] , skillsValueExp[2] , skillsValueExp[3], skillsValueExp[4] , skillsValueExp[6] , skillsValueExp[7],  skillsValueExp[8] ]
+        skills: [skillsValueExp[0] , skillsValueExp[1] , skillsValueExp[2] , skillsValueExp[3], skillsValueExp[4] , skillsValueExp[7],  skillsValueExp[8] ]
     }
 ]
 
@@ -65,7 +65,7 @@ experience.forEach(item => {
     <ul class="experience--skills_list">
     ${item.skills
         .map(skill =>
-       `<li class="portfolio--item_link"><img src="image/icons/${skill}" width="18px" height="18px" class="portfolio--item_skill" /></li>`)
+       `<li class="portfolio--item_link"><img src="image/icons/${skill}" width="20px" height="20px" class="portfolio--item_skill" /></li>`)
         .join('')}
     </ul>
     `

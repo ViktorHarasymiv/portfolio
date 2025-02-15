@@ -24,12 +24,12 @@ const skillsValue = Object.values(skills);
 const portfolioItems = [
     [{
         id: 0,
-        previewScreen: "_future-tech-app_prev.png",
-        fullImage : "_future-tech-app_FULL.png",
-        data: "December 2024",
+        previewScreen: "future-tech-app_prev.png",
+        data: "February 2025",
         title: "FutureTech",
         url : "https://viktorharasymiv.github.io/future-tech-app/",
         alt : "https://viktorharasymiv.github.io/createX/",
+        fullImage : "future-tech-app_FULL.png",
         about: "Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.",
         skills: [skillsValue[0] , skillsValue[9] , skillsValue[2] ,skillsValue[8] , skillsValue[6]]
     
@@ -81,7 +81,7 @@ function addItems(id) {
         `
         <li class="portfolio--item swiper-slide">
               <a onclick="showFullScreenImg(event, ${id})" href="" class="portfolio--item_previewScreen">
-                 <img src="image/${elem.previewScreen}" data-id="${elem.fullImage}" loading="lazy" />
+                 <img src="image/${elem.previewScreen}" data-id="${elem.fullImage}" width="351" height="230" loading="lazy" />
               </a>
               <div class="portfolio--item_content">
                  <span class="portfolio--item_data">${elem.data}</span>
