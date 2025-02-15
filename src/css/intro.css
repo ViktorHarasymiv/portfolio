@@ -107,19 +107,21 @@ align-items     : center;
 
 .intro--background_image { 
     z-index: -1;
-    position: relative;
 
-    left: -160px;
-    bottom: -10px;
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
 }
 
  .intro--foto {
-    position: absolute;
+    right: 0;
     bottom: 0;
-    max-width: 730px;
-    max-height: 700px;
-    
-    object-fit: fill;
+
+   max-width: 95%;
+   height: auto;
+
+   filter: contrast(110%) drop-shadow(0 0 2.75rem rgb(161, 161, 161));
  }
 
 .intro--button_box { 
@@ -160,6 +162,11 @@ align-items     : center;
     max-width: 100%;
     min-height: auto;
 }
+
+.intro--foto {
+    right: 10px;
+   max-width: 75%;
+ }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -220,10 +227,6 @@ align-items     : center;
         left       : 0;
     
         width      : 50vw;
-        height     : calc(100vh - 88px);
-
-        
-        filter: drop-shadow(0 0 1.75rem rgb(161, 161, 161));
     }
 
     .intro--text_content::after {
