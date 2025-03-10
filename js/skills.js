@@ -1,6 +1,6 @@
 const hardSkills = [
             "HTML (HTML5), EJS, JSX",
-            "CSS (CSS3), SASS (SCSS), Animations",
+            "CSS (CSS3), SASS (SCSS), Clsx",
             "JavaScript (ES6+, OOP), TypeScript",
             "React",
             "Redux (Redux Toolkit)",
@@ -8,7 +8,7 @@ const hardSkills = [
             "Vite, Gulp",
             "REST API",
             "BEM, Accessibility, UX",
-            "Git (GitHub, GitLab)",
+            "Git (GitHub, GitLab), Vercel",
             "Figma, Adobe Photoshop",
             "Basic understanding PHP",         
          ]
