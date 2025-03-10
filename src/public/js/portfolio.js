@@ -14,7 +14,8 @@ const skills = {
     Figma : "figma.svg",
     MoongoDB :"mongoDB.png",
     GitHub: "github.png",
-    SASS: "sass-ico.png"
+    SASS: "sass-ico.png",
+    Versel: "Vercel.svg"
 }
 
 const skillsValue = Object.values(skills);
@@ -24,11 +25,24 @@ const skillsValue = Object.values(skills);
 const portfolioItems = [
     [{
         id: 0,
+        previewScreen: "ApiFront.jpg",
+        data: "March 2025",
+        title: "Api servise",
+        url : "https://goit-react-hw-04-ten-vert.vercel.app/",
+        alt : "Api servise",
+        fullImage : "ApiBack.png",
+        about: "The service is developed in React JS, an image liking system and informative modal windows have been added, and a registration system has been added to improve the UI.<br/> <b>API servise Unsplash</b>",
+        skills: [skillsValue[0],skillsValue[1],skillsValue[2],skillsValue[3],skillsValue[8],skillsValue[10]]
+    
+    }],
+
+    [{
+        id: 1,
         previewScreen: "future-tech-app_prev.png",
         data: "February 2025",
         title: "FutureTech",
         url : "https://viktorharasymiv.github.io/future-tech-app/",
-        alt : "https://viktorharasymiv.github.io/createX/",
+        alt : "Future Tech App",
         fullImage : "future-tech-app_FULL.png",
         about: "Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.",
         skills: [skillsValue[0] , skillsValue[9] , skillsValue[2] ,skillsValue[8] , skillsValue[6]]
@@ -36,7 +50,7 @@ const portfolioItems = [
     }],
 
     [{
-        id: 1,
+        id: 2,
         previewScreen: "createx.jpg",
         data: "December 2024",
         title: "Createx",
@@ -49,7 +63,7 @@ const portfolioItems = [
     }],
 
     [{
-        id: 2,
+        id: 3,
         previewScreen: "interno.jpg",
         data: "September 2024",
         title: "Interno",
@@ -61,7 +75,7 @@ const portfolioItems = [
     }],
 
     [{
-        id: 3,
+        id: 4,
         previewScreen: "lalasiaSmoll.jpg",
         data: "January 2025",
         title: "Discover Furniture",
@@ -154,8 +168,7 @@ function closeModal() {
     }
 }
 
-
-/* Initial function */ 
+/* Initial function */
 
 for(let i = 0; i <= portfolioItems.length - 1; i++ ) {
     addItems(i);
