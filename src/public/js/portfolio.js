@@ -16,6 +16,7 @@ const skills = {
   GitHub: 'github.png',
   SASS: 'sass-ico.png',
   Versel: 'Vercel.svg',
+  Mui: 'mui.png',
 };
 
 const skillsValue = Object.values(skills);
@@ -24,6 +25,27 @@ const skillsValue = Object.values(skills);
 
 const portfolioItems = [
   [
+    {
+      id: 0,
+      previewScreen: 'CREATEX_WEAR.jpg',
+      data: 'April 2025',
+      title: 'Wear Shop',
+      url: 'https://createx-eight.vercel.app/',
+      alt: 'Api servise',
+      fullImage: 'CREATEX_WEAR.jpg',
+      about:
+        'The service is developed in React JS, an image liking system and informative modal windows have been added, and a registration system has been added to improve the UI.<br/> <b>API servise TMDB</b>',
+      skills: [
+        skillsValue[0],
+        skillsValue[1],
+        skillsValue[2],
+        skillsValue[3],
+        skillsValue[4],
+        skillsValue[11],
+        skillsValue[8],
+        skillsValue[10],
+      ],
+    },
     {
       id: 0,
       previewScreen: 'DB_front.png',
