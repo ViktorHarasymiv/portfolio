@@ -51,7 +51,7 @@ const portfolioItems = [
       previewScreen: 'DB_front.png',
       data: 'April 2025',
       title: 'Movie DB Servise',
-      url: 'https://goit-react-hw-05-three-lac.vercel.app/',
+      url: 'https://mdb-ruddy.vercel.app/',
       alt: 'Api servise',
       fullImage: 'DB_front.png',
       about:
@@ -108,31 +108,6 @@ const portfolioItems = [
       ],
     },
   ],
-
-  [
-    {
-      id: 3,
-      previewScreen: 'createx.jpg',
-      data: 'December 2024',
-      title: 'Createx',
-      url: 'https://viktorharasymiv.github.io/createX/',
-      alt: 'https://viktorharasymiv.github.io/createX/',
-      fullImage: 'createxFullScreen.jpg',
-      about:
-        'Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.',
-      skills: [
-        skillsValue[0],
-        skillsValue[1],
-        skillsValue[2],
-        skillsValue[3],
-        skillsValue[4],
-        skillsValue[6],
-        skillsValue[7],
-        skillsValue[8],
-      ],
-    },
-  ],
-
   [
     {
       id: 4,
