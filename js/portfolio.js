@@ -7,7 +7,7 @@ const targetImg = document.querySelector('.portfolio--item_previewScreen');
 const skills = {
   HTML: 'html.svg',
   CSS: 'cssIco.png',
-  JS: 'node-js.svg',
+  JS: 'js.svg',
   React: 'react.png',
   Redux: 'redux.svg',
   TypeScript: 'typescript.svg',
@@ -17,6 +17,8 @@ const skills = {
   SASS: 'sass-ico.png',
   Versel: 'Vercel.svg',
   Mui: 'mui.png',
+  NextJs: 'nextjs.svg',
+  Tailwind: 'icons-tailwind.png',
 };
 
 const skillsValue = Object.values(skills);
@@ -26,15 +28,54 @@ const skillsValue = Object.values(skills);
 const portfolioItems = [
   [
     {
-      id: 0,
-      previewScreen: 'CREATEX_WEAR.jpg',
-      data: 'April 2025',
-      title: 'Wear Shop',
-      url: 'https://createx-eight.vercel.app/',
-      alt: 'Api servise',
-      fullImage: 'CREATEX_WEAR.jpg',
+      id: '',
+      previewScreen: 'next-portfolio-omega.png',
+      fullImage: 'Full-next-portfolio-omega.png',
+      data: 'June 2025',
+      title: 'Dynamic Web Magic with Next.js',
+      url: 'https://next-portfolio-omega-woad.vercel.app/',
+      alt: 'Prototype',
+      type: 'Self work',
+      role: 'Full-stack Developer',
       about:
-        'The service is developed in React JS, an image liking system and informative modal windows have been added, and a registration system has been added to improve the UI.<br/> <b>API servise TMDB</b>',
+        'The primary goal is to create a unique user experience thatstands out among traditional portfolios and captures theattention of potential employers and collaborators. Thewebsite functions as an interactive résumé, combininginformative content with a creative presentation.',
+      skills: [
+        skillsValue[12],
+        skillsValue[13],
+        skillsValue[8],
+        skillsValue[10],
+      ],
+    },
+  ],
+  [
+    {
+      id: '',
+      previewScreen: 'teamProject.jpg',
+      fullImage: 'FULL-teamProject.png',
+      data: 'May 2025',
+      title: 'Portfolio prototype',
+      url: 'https://viktorharasymiv.github.io/code-questers/',
+      alt: 'Prototype',
+      type: 'Collaboration work',
+      role: 'Teamlead',
+      about:
+        'The primary goal is to create a unique user experience thatstands out among traditional portfolios and captures theattention of potential employers and collaborators. Thewebsite functions as an interactive résumé, combininginformative content with a creative presentation.',
+      skills: [skillsValue[0], skillsValue[1], skillsValue[2], skillsValue[8]],
+    },
+  ],
+  [
+    {
+      id: '',
+      previewScreen: 'CREATEX_WEAR.jpg',
+      fullImage: 'CREATEX_WEAR.jpg',
+      data: 'April 2025',
+      title: 'Prototype Wear Shop',
+      url: 'https://createx-eight.vercel.app/',
+      alt: 'Shop',
+      type: 'Self work',
+      role: 'Full-Stack Developer',
+      about:
+        'Sell clothes online, Provide a convenient platform forbrowsing, selecting and purchasing clothes from variouscategories: women`s, men`s, children`s, sport`s, etc. - Increase trust and customer engagement thanks to high-quality UX/UI, customer reviews, product ratings, returnguarantee and secure payment.',
       skills: [
         skillsValue[0],
         skillsValue[1],
@@ -46,14 +87,18 @@ const portfolioItems = [
         skillsValue[10],
       ],
     },
+  ],
+  [
     {
       id: 0,
       previewScreen: 'DB_front.png',
+      fullImage: 'DB_front.png',
       data: 'April 2025',
       title: 'Movie DB Servise',
       url: 'https://mdb-ruddy.vercel.app/',
       alt: 'Api servise',
-      fullImage: 'DB_front.png',
+      type: 'Self work',
+      role: 'Full-Stack Developer',
       about:
         'The service is developed in React JS, an image liking system and informative modal windows have been added, and a registration system has been added to improve the UI.<br/> <b>API servise TMDB</b>',
       skills: [
@@ -70,11 +115,13 @@ const portfolioItems = [
     {
       id: 1,
       previewScreen: 'ApiFront.jpg',
+      fullImage: 'ApiBack.png',
       data: 'March 2025',
       title: 'Api servise',
       url: 'https://goit-react-hw-04-ten-vert.vercel.app/',
       alt: 'Api servise',
-      fullImage: 'ApiBack.png',
+      type: 'Self work',
+      role: 'Full-Stack Developer',
       about:
         'The service is developed in React JS, an image liking system and informative modal windows have been added, and a registration system has been added to improve the UI.<br/> <b>API servise Unsplash</b>',
       skills: [
@@ -87,16 +134,17 @@ const portfolioItems = [
       ],
     },
   ],
-
   [
     {
       id: 2,
       previewScreen: 'future-tech-app_prev.png',
+      fullImage: 'future-tech-app_FULL.png',
       data: 'February 2025',
       title: 'FutureTech',
       url: 'https://viktorharasymiv.github.io/future-tech-app/',
       alt: 'Future Tech App',
-      fullImage: 'future-tech-app_FULL.png',
+      type: 'Self work',
+      role: 'Full-Stack Developer',
       about:
         'Many complex components were implemented in the project: credit calculators, multi-stage mortgage application forms, asynchronous filter of bank services, custom maps (REST API YandexMap) with ATMs and office points.',
       skills: [
@@ -128,7 +176,6 @@ const portfolioItems = [
       ],
     },
   ],
-
   [
     {
       id: 5,
@@ -170,7 +217,9 @@ function addItems(id) {
                    elem.url
                  } target="_blank"><h4 class="portfolio--item_title">${
           elem.title
-        }</h4> </a>
+        }</h4></a>
+                 <h4>${elem.role}</h4>
+                  <p>${elem.type}</p>
                  <p class="portfolio--item_about">${elem.about}</p>
                  <ul class="portfolio--item_icons_list">
                    ${elem.skills
@@ -209,17 +258,14 @@ function showFullScreenImg(event) {
             <div class="portfolio--modal">
               <button onClick="closeModal()" class="close_modal">
             </button>
-            
+
             <div class="portfolio--overlay">
             <div class="image_scroll_box">
               <img onClick="closeModal()" src="image/${imageData.id}" class="portfolio--overlay_image" loading="lazy"   />
               <div class="scroll_animate">
-              <span>
-              Scroll me
-              </span>
               <img src="https://img.icons8.com/?size=100&id=37223&format=png&color=000000" width="24px" height="24px"/>
               </div>
-              </div>      
+              </div>
             </div>
                                  `;
 
