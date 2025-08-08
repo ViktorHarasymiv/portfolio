@@ -1,18 +1,18 @@
 .animate {
-    transition  : 1s; 
-    opacity     : 0;
+  transition: 1s;
+  opacity: 0;
 }
 
 /*  HEADER  */
 
-.header.animate  {
-    transition: transform .9s 1s !important;
-    transform: translateY(-100px);
+.header.animate {
+  transition: transform 0.9s 1s !important;
+  transform: translateY(-100px);
 }
 
 body.ss-show .header.animate {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* INTRO SECTION */
@@ -20,108 +20,105 @@ body.ss-show .header.animate {
 /*  I - 1  */
 
 .intro--text_content.animate {
-    transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 body.ss-show .intro--text_content.animate {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /*  I - 2  */
 
 .intro--button_box.animate.i-2 {
-    transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 body.ss-show .intro--button_box.animate.i-2 {
-    opacity: 1;
+  opacity: 1;
 
-    transition-delay: .55s;
+  transition-delay: 0.55s;
 
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 /*  I - PHOTO  */
 
- .intro--background_image.animate {
-    transition: 1.8s;
+.intro--background_image.animate {
+  transition: 1.8s;
+}
+
+body.ss-show .grid.animate {
+  transition-delay: 0.6s;
+  opacity: 1;
 }
 
 body.ss-show .intro--background_image.animate {
-    transition-delay: .80s;
-    opacity: 1;
+  transition-delay: 1.4s;
+  opacity: 1;
 }
-
 
 /* ABOUT SECTION */
 
 .section--title.animate,
 .about--paragraph.animate {
-    transform: translateY(-30px);
-
+  transform: translateY(-30px);
 }
 
 .about--paragraph.animate {
-    transition-delay: .35s;
+  transition-delay: 0.35s;
 }
 
 section.show-animation .section--title.animate,
 section.show-animation .about--paragraph.animate {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
-
-
 
 /* SKILL SECTION */
 
 .skills--section_box.animate {
-    transform: translateY(-30px);
-    transition-delay: .35s;
+  transform: translateY(-30px);
+  transition-delay: 0.35s;
 }
 
 section.show-animation .skills--section_box.animate {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Experience SECTION */
 
-
 .experience--box.animate {
-    transform: translateY(-30px);
-    transition-delay: .35s;
+  transform: translateY(-30px);
+  transition-delay: 0.35s;
 }
 
 section.show-animation .experience--box.animate {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* PORTFOLIO SECTION */
 
-
 .portfolio--box.animate {
-    transform: translateY(-30px);
-    transition-delay: .35s;
+  transform: translateY(-30px);
+  transition-delay: 0.35s;
 }
 
 section.show-animation .portfolio--box.animate {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* CONTACT SECTION */
 
-
 .contact--content_wrapper.animate {
-    transform: translateY(-30px);
-    transition-delay: .45s;
-
+  transform: translateY(-30px);
+  transition-delay: 0.45s;
 }
 
 section.show-animation .contact--content_wrapper.animate {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
