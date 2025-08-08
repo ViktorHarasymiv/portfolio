@@ -409,10 +409,11 @@
 
 @media screen and (max-width: 599.98px) {
   .portfolio--overlay {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .image_scroll_box {
-    height: 90vh;
+    width: 85dvw;
+    height: 85dvh;
   }
 
   .portfolio--item_content {
@@ -439,8 +440,7 @@
   }
 
   .close_modal {
-    right: 15px;
-    top: 20px;
+    display: none;
   }
 
   .portfolio--item_icons_list {

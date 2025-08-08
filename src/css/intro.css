@@ -1,4 +1,5 @@
 #intro--section {
+  overflow: hidden;
   position: relative;
 
   height: calc(100vh - 80px);
@@ -255,26 +256,6 @@
 
     flex-wrap: nowrap;
     align-self: stretch;
-  }
-
-  .grid {
-    z-index: 999;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: grid;
-    grid-template-columns: repeat(6, 145px);
-  }
-
-  .cell {
-    width: 145px;
-    height: 148.5px;
-    background-color: var(--c-light);
-
-    border: 1px solid var(--color-gray-11);
-
-    transition: background 0.5s ease-in-out;
   }
 
   .intro--b-1,

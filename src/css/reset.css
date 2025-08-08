@@ -7,6 +7,7 @@ html,
 body,
 div,
 span,
+p,
 applet,
 object,
 iframe,
@@ -175,6 +176,10 @@ h3 > span {
   font-family: inherit;
   font-weight: inherit;
   font-size: var(--h3-font-size);
+}
+
+p {
+  font-size: inherit;
 }
 
 .visually-hidden {
