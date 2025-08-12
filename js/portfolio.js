@@ -29,6 +29,29 @@ const portfolioItems = [
   [
     {
       id: '',
+      previewScreen: 'parallax.png',
+      fullImage: 'parallax.png',
+      data: 'June 2025',
+      title: 'Natural Forest',
+      url: 'https://parallax-3d-lens-effect.vercel.app/',
+      alt: 'Parallax Effect',
+      type: 'Self work',
+      role: 'Full-stack Developer',
+      about:
+        'Educational project for practicing and mastering the parallax effect on full-page applications. Demonstrate skills and understanding of working with cursor behavior and dynamic element positioning.',
+      skills: [
+        skillsValue[0],
+        skillsValue[1],
+        skillsValue[2],
+        skillsValue[3],
+        skillsValue[8],
+        skillsValue[10],
+      ],
+    },
+  ],
+  [
+    {
+      id: '',
       previewScreen: 'next-portfolio-omega.png',
       fullImage: 'Full-next-portfolio-omega.png',
       data: 'June 2025',

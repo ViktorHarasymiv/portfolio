@@ -3,10 +3,10 @@ const hardSkills = [
   'CSS (CSS3), SCSS, Clsx, CSS module',
   'JS (ES6+, OOP)',
   'React.js, Next.js, TypeScript',
+  'React Router',
   'State manager (Context Api, Redux Toolkit, Zustang)',
   'React Hooks (state, context, useEffect, useRef, useMemo, useCallBack)',
   'React libraries (Axios, React Query, Formik, Yup, Loader, Tailwind, MUI)',
-  'React Router',
   'REST API (Postman , Swagger)',
   'Node.js + Express.js',
   'MongoDB',
@@ -14,7 +14,7 @@ const hardSkills = [
   'Git (GitHub), Vercel, render.com',
   'BEM, Kebab-case, snake_case, camelCase',
   'Figma, Adobe Photoshop',
-  'Development of adaptive and responsive websites',
+  'Adaptive and responsive layout',
 ];
 
 const softSkills = [
