@@ -232,7 +232,7 @@ function addItems(id) {
               <a onclick="showFullScreenImg(event, ${id})" href="" class="portfolio--item_previewScreen">
                  <img src="/image/${elem.previewScreen}" data-id="${
           elem.fullImage
-        }" width="351" height="230" loading="lazy" />
+        }" width="351" height="230"/>
               </a>
               <div class="portfolio--item_content">
                  <span class="portfolio--item_data">${elem.data}</span>
