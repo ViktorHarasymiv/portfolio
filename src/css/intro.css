@@ -100,6 +100,8 @@
 .intro--text__quality {
   color: var(--c-white);
   font-size: var(--quality-text);
+
+  transform: translate(20px, 0);
 }
 
 .intro--subb--text_title {

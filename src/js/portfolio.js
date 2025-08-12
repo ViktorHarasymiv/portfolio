@@ -229,11 +229,11 @@ function addItems(id) {
       elem =>
         `
         <li class="portfolio--item swiper-slide">
-              <a onclick="showFullScreenImg(event, ${id})" href="" class="portfolio--item_previewScreen">
-                 <img src="/image/${elem.previewScreen}" data-id="${
+              <div onclick="showFullScreenImg(event)" class="portfolio--item_previewScreen">
+                 <img src="image/portfolio/${elem.previewScreen}" data-id="${
           elem.fullImage
         }" width="351" height="230"/>
-              </a>
+              </div>
               <div class="portfolio--item_content">
                  <span class="portfolio--item_data">${elem.data}</span>
                  <a href=${
@@ -262,7 +262,7 @@ function addItems(id) {
   return addPortfolioItem.about;
 }
 
-function showFullScreenImg(event) {
+window.showFullScreenImg = function (event) {
   event.preventDefault();
 
   const previewScreenItem = event.target;
@@ -284,7 +284,7 @@ function showFullScreenImg(event) {
 
             <div class="portfolio--overlay">
             <div class="image_scroll_box">
-              <img onClick="closeModal()" src="image/${imageData.id}" class="portfolio--overlay_image" loading="lazy"   />
+              <img onClick="closeModal()" src="image/portfolio/${imageData.id}" class="portfolio--overlay_image"/>
               <div class="scroll_animate">
               <img src="https://img.icons8.com/?size=100&id=37223&format=png&color=000000" width="24px" height="24px"/>
               </div>
@@ -297,16 +297,16 @@ function showFullScreenImg(event) {
   }
 
   galleryBox.insertAdjacentHTML('beforeend', markUpScreen);
-}
+};
 
-function closeModal() {
+window.closeModal = function () {
   const modal = document.querySelector('.portfolio--modal');
 
   if (modal) {
     document.body.classList.remove('lock-scroll');
     modal.remove();
   }
-}
+};
 
 /* Initial function */
 

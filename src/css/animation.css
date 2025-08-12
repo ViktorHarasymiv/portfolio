@@ -28,6 +28,12 @@ body.ss-show .intro--text_content.animate {
   transform: translateX(0);
 }
 
+body.ss-show .intro--text__quality.animate {
+  transition-delay: 1.9s;
+
+  transform: translateX(0);
+  opacity: 1;
+}
 /*  I - 2  */
 
 .intro--button_box.animate.i-2 {
