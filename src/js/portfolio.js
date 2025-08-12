@@ -230,7 +230,7 @@ function addItems(id) {
         `
         <li class="portfolio--item swiper-slide">
               <a onclick="showFullScreenImg(event, ${id})" href="" class="portfolio--item_previewScreen">
-                 <img src="image/${elem.previewScreen}" data-id="${
+                 <img src="/image/${elem.previewScreen}" data-id="${
           elem.fullImage
         }" width="351" height="230" loading="lazy" />
               </a>
@@ -248,7 +248,7 @@ function addItems(id) {
                    ${elem.skills
                      .map(
                        skill =>
-                         `<li class="portfolio--item_link"><img src="image/icons/${skill}" width="20px" height="20px" class="portfolio--item_skill" /></li>`
+                         `<li class="portfolio--item_link"><img src="/image/icons/${skill}" width="20px" height="20px" class="portfolio--item_skill" /></li>`
                      )
                      .join('')}
                  </ul>
