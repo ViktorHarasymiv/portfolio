@@ -95,6 +95,12 @@
   transition: transform 0.4s 0.1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.header_action-wrapper {
+  display: flex;
+
+  gap: 40px;
+}
+
 .header_nav--item:hover .works--sub_nav {
   transform: scaleY(1);
 }

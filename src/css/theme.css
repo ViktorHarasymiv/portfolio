@@ -1,0 +1,49 @@
+.is-dark-theme body {
+  background-color: var(--color-3);
+  color: var(--white);
+}
+
+.is-dark-theme #preloader {
+  background-color: var(--dark-DT);
+}
+
+.is-dark-theme .header_wrapper {
+  background-color: var(--c-white);
+}
+
+.is-dark-theme .intro--title,
+.is-dark-theme .intro--text__quality {
+  color: var(--c-gray);
+}
+.is-dark-theme .intro--b-1,
+.is-dark-theme .intro--b-2 {
+  color: var(--c-gray);
+}
+.is-dark-theme .__button-white {
+  border-color: var(--c-gray);
+}
+
+.is-dark-theme .__link::after {
+  background-color: var(--color-3);
+}
+
+.is-dark-theme a {
+  color: var(--white);
+}
+
+.is-dark-theme .header_ico,
+.is-dark-theme .header_nav_link {
+  color: var(--color-3);
+}
+
+.is-dark-theme a:hover {
+  color: var(--accet-green-DT);
+}
+
+.is-dark-theme button {
+  background-color: var(--accet-green-DT);
+}
+
+.is-dark-theme button:hover {
+  background-color: var(--hover-green);
+}
