@@ -1,51 +1,50 @@
-  .ham {
-    cursor: pointer;
+.ham {
+  cursor: pointer;
 
-    width: 70px;
+  width: 70px;
 
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  .hamRotate.active {
-    transform: rotate(45deg);
-  }
-
-  .hamRotate180.active {
-    transform: rotate(180deg);
-  }
-
-  .line {
-    fill:none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke: var(--color-white);
-    stroke-width:3;
-    stroke-linecap:round;
-  }
-
-  .ham4 .top {
-    stroke-dasharray: 40 121;
-  }
-  
-  .ham4 .bottom {
-    stroke-dasharray: 40 121;
-  }
-
-  .ham4.active .top {
-    stroke-dashoffset: -68px;
-  }
-
-  .ham4.active .bottom {
-    stroke-dashoffset: -68px;
-  }
-
-
-@media only screen and (min-width: 900.98px) { 
-    .ham4 {
-        display: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: var(--color-white);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+
+@media only screen and (min-width: 900.98px) {
+  .ham4 {
+    display: none;
+  }
 }

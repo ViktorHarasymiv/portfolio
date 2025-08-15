@@ -171,9 +171,9 @@ function createItem() {
       (elem, key) =>
         `<li id="${key}"  class="portfolio--item swiper-slide">
               <div onclick="showFullScreenImg(event)" class="portfolio--item_previewScreen">
-                 <img src="../image/portfolio/${elem.previewScreen}" data-id="${
-          elem.fullImage
-        }" width="351" height="230"/>
+                 <img src="assets/image/portfolio/${
+                   elem.previewScreen
+                 }" data-id="${elem.fullImage}" width="351" height="230"/>
               </div>
               <div class="portfolio--item_content">
                  <span class="portfolio--item_data">${elem.data}</span>
@@ -189,7 +189,7 @@ function createItem() {
                    ${elem.skills
                      .map(
                        skill =>
-                         `<li class="portfolio--item_link"><img src="../image/icons/${skill}" width="20px" height="20px" class="portfolio--item_skill" /></li>`
+                         `<li class="portfolio--item_link"><img src="assets/image/icons/${skill}" width="20px" height="20px" class="portfolio--item_skill" /></li>`
                      )
                      .join('')}
                  </ul>
@@ -222,7 +222,7 @@ window.showFullScreenImg = function (event) {
 
             <div class="portfolio--overlay">
             <div class="image_scroll_box">
-              <img onClick="closeModal()" src="../image/portfolio/${imageData.id}" class="portfolio--overlay_image"/>
+              <img onClick="closeModal()" src="assets/image/portfolio/${imageData.id}" class="portfolio--overlay_image"/>
               <div class="scroll_animate">
               <img src="https://img.icons8.com/?size=100&id=37223&format=png&color=000000" width="24px" height="24px"/>
               </div>

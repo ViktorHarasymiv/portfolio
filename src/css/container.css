@@ -4,24 +4,22 @@
   min-width: 320px;
   width: min(100%, 100vw);
   margin: 0 auto;
-  
 }
 
 /* Styles for Desktop devices */
 
 @media only screen and (min-width: 900px) {
-  .container { 
+  .container {
     width: min(90%, 1248px);
     padding: 0 32px;
   }
- }
+}
 
 @media only screen and (min-width: 1280px) {
   .container {
     width: 88%;
 
     padding: 0 32px;
-
   }
 }
 

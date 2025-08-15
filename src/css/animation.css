@@ -55,7 +55,6 @@ body.ss-show .intro--button_box.animate.i-2 {
 }
 
 body.ss-show .intro--background_image.animate {
-  transition-delay: 1.6s;
   opacity: 1;
 }
 
