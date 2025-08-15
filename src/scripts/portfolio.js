@@ -171,7 +171,7 @@ function createItem() {
       (elem, key) =>
         `<li id="${key}"  class="portfolio--item swiper-slide">
               <div onclick="showFullScreenImg(event)" class="portfolio--item_previewScreen">
-                 <img src="../image/${elem.previewScreen}" data-id="${
+                 <img src="../image/portfolio/${elem.previewScreen}" data-id="${
           elem.fullImage
         }" width="351" height="230"/>
               </div>
