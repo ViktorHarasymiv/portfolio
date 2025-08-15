@@ -180,7 +180,7 @@
   overflow-y: scroll;
 
   width: 70vw;
-  height: 83vh;
+  height: 90vh;
 }
 
 .portfolio--overlay_image {
@@ -413,7 +413,7 @@
   }
   .image_scroll_box {
     width: 85dvw;
-    height: 85dvh;
+    height: 90dvh;
   }
 
   .portfolio--item_content {
