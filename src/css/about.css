@@ -27,7 +27,7 @@
   top: -34px;
   left: -41px;
 
-  background-image: url(../image/icons/letter-j.svg);
+  background-image: url('../public/icons/letter-j.svg');
 
   background-repeat: no-repeat;
   background-size: contain;

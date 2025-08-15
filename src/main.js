@@ -2,7 +2,6 @@ import './scripts/preloader.js';
 import './scripts/animText.js';
 import './scripts/moveHeader.js';
 import './scripts/navigation.js';
-import './scripts/mobileMenu.js';
 import './scripts/skills.js';
 import './scripts/portfolio.js';
 import './scripts/experience.js';
