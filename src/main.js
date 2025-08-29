@@ -9,4 +9,5 @@ import './scripts/formValidator.js';
 import './scripts/pageScroll.js';
 import './scripts/animation.js';
 import './scripts/experience.js';
+import './scripts/photoAnimation.js';
 // import './scripts/theme.module.js';

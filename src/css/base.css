@@ -20,6 +20,8 @@ body {
 }
 
 main {
+  overflow: hidden;
+
   flex-grow: 1;
 }
 
