@@ -1,7 +1,7 @@
 .ham {
   cursor: pointer;
 
-  width: 70px;
+  width: 44px;
 
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
