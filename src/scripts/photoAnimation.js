@@ -5,15 +5,18 @@ const body = document.querySelector('body');
 const scrolledPhoto = () => {
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
-    photo.style.transform = `translateX(-${scrollY.toFixed(1)}px`;
 
-    let value = scrollY / 100 / 8;
+    photo.style.transform = `translateX(-${scrollY.toFixed(1)}px)`;
 
-    if (value.toFixed(1) !== 0) {
+    let value = scrollY / 100 / 7;
+
+    console.log(scrollY);
+
+    if (scrollY === 0) {
+      photo.style.opacity = '1';
+      return;
+    } else {
       photo.style.opacity = `${value.toFixed(1)}`;
-      if (value.toFixed(1) == 0) {
-        photo.style.opacity = '1';
-      }
     }
   });
 };

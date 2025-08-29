@@ -37,13 +37,13 @@ body.ss-show .intro--text__quality.animate {
 /*  I - 2  */
 
 .intro--button_box.animate.i-2 {
-  transform: translateY(100%);
+  transform: translateY(20px);
 }
 
 body.ss-show .intro--button_box.animate.i-2 {
   opacity: 1;
 
-  transition-delay: 0.55s;
+  transition-delay: 0.65s;
 
   transform: translateY(0);
 }
@@ -51,10 +51,15 @@ body.ss-show .intro--button_box.animate.i-2 {
 /*  I - PHOTO  */
 
 .intro--background_image.animate {
-  transition: 1.8s;
+  transform: translateX(-0%);
+  opacity: 0;
+  transition: 2s;
+
+  transition-delay: 1.5s;
 }
 
 body.ss-show .intro--background_image.animate {
+  transform: translateX(0);
   opacity: 1;
 }
 

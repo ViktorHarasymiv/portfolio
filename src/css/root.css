@@ -12,13 +12,13 @@
   --h1-font-size: clamp(3.5rem, 4.3vw, 6rem);
   --h1-mobile: clamp(3.3rem, 8.2vw, 8.8rem);
 
-  --h2-font-size: clamp(2.8rem, 3.8vw, 5.8rem);
+  --h2-font-size: clamp(2.5rem, 3vw, 5rem);
 
   --h3-font-size: clamp(2.3rem, 3.3vw, 5.3rem);
   --h4-font-size: clamp(1.5rem, 2vw, 4rem);
 
-  --section--padding-top: calc(6.5 * (2.4rem * 1));
-  --m-section--padding-top: calc(4 * (2.4rem * 1));
+  --section--padding-top: calc(6.5 * (2rem * 1));
+  --m-section--padding-top: calc(2 * (1.5rem * 1));
 
   --section--margin-top: calc(3 * (2.4rem * 1));
 
@@ -26,7 +26,7 @@
   --subb-title__text: clamp(0.8rem, 1.1vw, 2rem);
   --skills-item-size: clamp(0.6rem, 0, 9vw, 1.5rem);
 
-  --paragraph: clamp(1rem, 1.4vw, 1.6rem);
+  --paragraph: clamp(0.7rem, 1vw, 1.3rem);
   --paragraph_selected: clamp(1.4rem, 2vw, 2.4rem);
 
   --ico-font-size: 26px;
@@ -119,8 +119,8 @@
   --color-3-dark: hsla(0, 0%, 8%, 1);
 
   /* neutrals
-   * generated using 
-   * Tint & Shade Generator 
+   * generated using
+   * Tint & Shade Generator
    * (https://maketintsandshades.com/)
    */
   --color-black: #000000;
