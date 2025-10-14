@@ -10,8 +10,6 @@ const scrolledPhoto = () => {
 
     let value = scrollY / 100 / 7;
 
-    console.log(scrollY);
-
     if (scrollY === 0) {
       photo.style.opacity = '1';
       return;
