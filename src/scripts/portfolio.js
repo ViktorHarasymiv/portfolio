@@ -4,6 +4,7 @@ const PortfolioListBox = document.querySelector('.portfolio--list');
 const targetImg = document.querySelector('.portfolio--item_previewScreen');
 
 /*  Skills array  */
+
 const skills = {
   HTML: 'html.svg',
   CSS: 'cssIco.png',

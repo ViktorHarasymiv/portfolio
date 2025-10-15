@@ -44,6 +44,7 @@
 }
 
 .header.sticky {
+  z-index: 99999;
   opacity: 0;
   visibility: hidden;
   background-color: var(--color-3);

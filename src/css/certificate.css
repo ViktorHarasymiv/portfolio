@@ -7,7 +7,7 @@
   flex-wrap: nowrap;
 
   width: 100%;
-  height: 800px;
+  height: 600px;
 }
 
 .certificate_page {
@@ -66,6 +66,8 @@
 
     flex-direction: column;
     flex-wrap: wrap;
+
+    max-height: 500px;
   }
 
   .certificate_page {
@@ -94,5 +96,11 @@
 
   .page_3:hover {
     transform: translateX(0) scale(1.01);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .certificate_wrapper {
+    max-height: 380px;
   }
 }
