@@ -50,7 +50,7 @@ const experience = [
     ],
   },
   {
-    period: 'November 2024 - Present',
+    period: 'November 2024 - November 2025',
     type: 'Education',
     institution: 'GoIT - start your career in IT',
     technical: 'Full Stack Developer',
