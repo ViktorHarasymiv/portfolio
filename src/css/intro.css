@@ -128,9 +128,8 @@
   left: 0;
   bottom: 0;
 
-  max-width: 550px;
   width: 100%;
-  max-height: 550px;
+  height: 100%;
 
   object-fit: cover;
 
@@ -176,11 +175,6 @@
   .intro--title {
     max-width: 100%;
     min-height: auto;
-  }
-
-  .intro--foto {
-    max-width: 600px;
-    max-height: 650px;
   }
 }
 
