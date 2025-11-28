@@ -330,6 +330,7 @@ window.closeModal = function () {
 };
 
 /* Initial function */
+/* Initial function */
 
 window.addEventListener('load', () => {
   createItem();
