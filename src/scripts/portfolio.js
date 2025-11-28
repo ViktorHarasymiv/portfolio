@@ -174,8 +174,6 @@ const contentArray = [
     about:
       'Leleka is a convenient app for expectant mothers. It helps track the progress of pregnancy day by day, receive helpful tips, keep a personal journal, and manage tasks. This project is a secure, full-featured web application built with a modern JavaScript stack. It includes user registration, authentication, and full CRUD operations over HTTPS, with persistent data storage in MongoDB and session management via cookies.',
     skills: [
-      skillsValue[0],
-      skillsValue[1],
       skillsValue[12],
       skillsValue[5],
       skillsValue[7],
@@ -197,8 +195,6 @@ const contentArray = [
     about:
       'Camper Nine is a modern web application that allows users to browse, compare, and book camper vans for travel across Ukraine. Each vehicle is presented with a detailed description, pricing, user rating, photo gallery, and a list of amenities such as air conditioning, kitchen, bathroom, and television.',
     skills: [
-      skillsValue[0],
-      skillsValue[1],
       skillsValue[12],
       skillsValue[5],
       skillsValue[7],
@@ -209,10 +205,10 @@ const contentArray = [
   },
   {
     id: 9,
-    previewScreen: 'databasepf.png',
-    fullImage: 'databasepf.png',
+    previewScreen: 'Admin.jpg',
+    fullImage: 'Admin.jpg',
     data: 'October 2025',
-    title: 'Admin panel for Plus Fit App',
+    title: 'Dashboard - Iron Mass - Sport complex',
     url: 'https://plusfit-club-dashboard.vercel.app/',
     alt: 'Admin panel',
     type: 'Private project',
@@ -220,10 +216,7 @@ const contentArray = [
     about:
       'A functional and secure admin dashboard built with Node.js, designed to manage the backend infrastructure of the Plus Fit web application. The panel provides full CRUD capabilities, media resource management, and real-time handling of user invitations and notifications',
     skills: [
-      skillsValue[0],
-      skillsValue[1],
-      skillsValue[12],
-      skillsValue[5],
+      skillsValue[3],
       skillsValue[7],
       skillsValue[11],
       skillsValue[8],
@@ -232,21 +225,18 @@ const contentArray = [
   },
   {
     id: 10,
-    previewScreen: 'plusfit.png',
-    fullImage: 'plusfit-club-full.png',
+    previewScreen: 'preview - Iron Mass - Sports complex.jpg',
+    fullImage: 'Iron Mass - Sports complex.jpg',
     data: 'October 2025',
-    title: 'Plus Fit Web Page',
+    title: 'Iron Mass - Sports complex',
     url: 'https://plusfit-club-nmf7.vercel.app/',
     alt: 'Admin panel',
     type: 'Commercial (freelance) project',
-    role: 'Full Stack Developer',
+    role: 'Full Stack Developer: React.js , Node.js, MongoDB, Rest Api, Brevo (SMTP), OAuth 2.0',
     about:
-      'A functional and secure admin dashboard built with Node.js, designed to manage the backend infrastructure of the Plus Fit web application. The panel provides full CRUD capabilities, media resource management, and real-time handling of user invitations and notifications',
+      'The frontend is developed in React, the backend in Node.js + Express, with MongoDB as the database. Email services are handled via Brevo, and deployment is managed through Vercel (frontend) and Render or VPS (backend).',
     skills: [
-      skillsValue[0],
-      skillsValue[1],
-      skillsValue[12],
-      skillsValue[5],
+      skillsValue[3],
       skillsValue[7],
       skillsValue[11],
       skillsValue[8],
